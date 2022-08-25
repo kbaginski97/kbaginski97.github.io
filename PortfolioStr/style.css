@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+.loading-page-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(37, 37, 75);
+}
+
+.loading-content {
+    text-align: left;
+    width: 50%;
+    animation: loadingAnimation 3s ease-in-out;
+}
+
+.loading-content span {
+    display: block;
+    color: white;
+    font-size: 95px;
+}
+
+.loading-content span::first-letter {
+    font-weight: bold;
+}
+
+.loading-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    transform: skew(-30deg);
+    margin-left: 20%;
+}
+
+.loading-content .loading-box span {
+    font-size: 60px;
+    transform: skew(30deg);
+    color: rgb(37, 37, 75);
+}
+
+h2,
+h3 {
+    font-family: 'Century', Times, serif;
+    font-size: 30px;
+}
+
+.main-container {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 5px 3px 3px black;
+}
+
+.nav-bar-container {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(37, 37, 75);
+    z-index: 30;
+}
+
+nav ul {
+    width: 100%;
+}
+
+.main-nav {
+    list-style: none;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-item {
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: linear-gradient(45deg, purple, orange)1;
+    margin: 0 20px;
+}
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+    color: rgb(108, 222, 226);
+}
+
+a:hover {
+    color: grey;
+    transition: 0.3s;
+}
+
+.nav-bar-container img {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    left: 15px;
+    rotate: 30deg;
+}
+
+.about-me-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.about-me-container h2 {
+    text-align: center;
+}
+
+.text-content-holder {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    height: 250px;
+    border: 5px solid rgb(149, 158, 138);
+    border-radius: 5%;
+    color: black;
+}
+
+.text-content-holder p {
+    margin: 10px;
+}
+
+.skills-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.skills-container h2 {
+    text-align: center;
+}
+
+.skills-box {
+    width: 100%;
+}
+
+.skill-box:hover {
+    background-color: white;
+    color: black;
+}
+
+.skills-main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(37, 37, 75);
+}
+
+.skill-box {
+    width: 50%;
+    height: 25%;
+    border: 5px solid rgb(149, 158, 138);
+    border-radius: 10%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+/* 
+.skill-box-extensions {
+    width: 50%;
+    height: 25%;
+    border: 5px solid;
+    margin: 10px 0;
+    border: 5px solid rgb(149, 158, 138);
+    border-radius: 10%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.skill-box-frameworks {
+    width: 50%;
+    height: 25%;
+    border: 5px solid;
+    margin: 10px 0;
+    border: 5px solid rgb(149, 158, 138);
+    border-radius: 10%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+} */
+
+.skills-inprogress {
+    width: 50%;
+    height: 25%;
+    border: 5px solid;
+    margin: 10px 0;
+    border: 5px solid rgb(149, 158, 138);
+    border-radius: 10%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.skills-inprogress h3 {
+    font-size: 20px;
+}
+
+.skills-inprogress p {
+    font-size: 1.5em;
+}
+
+
+.image-holder img {
+    height: 150px;
+    rotate: calc(10deg)
+}
+
+.section-portfolio h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.portfolio-holder {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 75);
+    color: white;
+}
+
+.portfolio-nav-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-nav {
+    display: flex;
+    list-style: none;
+}
+
+.portfolio-item {
+    text-align: center;
+    width: 33%;
+    height: 25%;
+}
+
+.portfolio-nav-holder i {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.portfolio-nav-holder .portfolio-item i:hover {
+    font-size: 25px;
+    cursor: pointer;
+    color: aqua;
+}
+
+.portfolio-item img {
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.portfolio-item img:hover {
+    background-color: rgb(37, 37, 75);
+    opacity: 0.5;
+    content: "kliknij";
+}
+
+.section-contact h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(37, 37, 75);
+}
+
+.contact-item {
+    display: flex;
+    width: 50%;
+    margin: 50px 20px 0px 20px;
+    height: 100px;
+    border: 1px solid white;
+    color: white;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact-content span {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 50px;
+}
+
+.contact-content #shownumber {
+    cursor: pointer;
+}
+
+.email-content {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.email-content span {
+    margin: 50px;
+}
+
+#email {
+    cursor: pointer;
+}
+
+.phoneOpen {
+    animation: phoneContent 3s ease-in-out;
+}
+
+.footer-holder {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(70, 66, 66);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-holder p {
+    font-size: 1.5em;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes phoneContent {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
