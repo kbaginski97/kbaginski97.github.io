@@ -125,9 +125,10 @@ a:hover {
 
 .text-content-holder {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
+    animation: textcontentanim 3s ease-in-out;
 }
 
 .text-content {
@@ -140,30 +141,20 @@ a:hover {
     font-size: 20px;
 }
 
-.text-content::before {
-    position: absolute;
-    border: 7px solid rgb(37, 37, 75);
-    border-left: white;
-    border-top: white;
-    width: 250px;
-    margin: 10px;
-    height: 400px;
-    content: "";
-}
-
-
 .text-content-holder p {
     margin: 15px;
 }
 
 .skills-container {
+    color: white;
     max-width: 100%;
     margin: auto;
+    background-color: rgb(37, 37, 75);
 }
 
 .skills-container h2 {
     text-align: center;
-    margin: 50px 0;
+    padding: 20px;
 }
 
 .skill-box:hover {
@@ -174,10 +165,10 @@ a:hover {
 .skills-main-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     height: 300px;
     width: 100%;
-    background-color: rgb(37, 37, 75);
+
 }
 
 .skill-box {
@@ -337,7 +328,6 @@ a:hover {
     cursor: pointer;
 }
 
-
 #email {
     cursor: pointer;
 }
@@ -360,6 +350,10 @@ a:hover {
     font-size: 1.5em;
 }
 
+hr {
+    animation: lineanimation 3s ease-in-out;
+}
+
 @keyframes loadingAnimation {
     0% {
         opacity: 0;
@@ -378,4 +372,28 @@ a:hover {
     100% {
         opacity: 1;
     }
+}
+
+@keyframes textcontentanim {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes lineanimation {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+
 }
