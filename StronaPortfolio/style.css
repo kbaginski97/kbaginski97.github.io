@@ -21,6 +21,8 @@ html {
     background-image: url('img/header.png');
     background-repeat: no-repeat;
     background-position: top 0 right 0;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .img-holder-container {
@@ -93,9 +95,14 @@ html {
 }
 
 .about-me-container {
-    display: block;
+    display: flex;
     width: 100%;
     min-height: 816px;
+    max-width: 1280px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
 }
 
 .about-me-container h2 {
@@ -138,6 +145,8 @@ html {
     background-image: url('img/Skills.png');
     background-repeat: no-repeat;
     background-position: bottom;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .skills-main-container h2 {
@@ -212,6 +221,10 @@ html {
     width: 100%;
 }
 
+.Portfolio {
+    padding-block: 100px;
+}
+
 .main-portfolio-container {
     display: block;
     width: 100%;
@@ -220,10 +233,10 @@ html {
 
 .main-portfolio-container h2 {
     text-align: center;
-    margin: 200px 0px 100px 0px;
     font-family: 'Poppins';
     font-size: 36px;
     color: #427098;
+    margin-bottom: 100px;
 }
 
 .portfolio-item {
