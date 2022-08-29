@@ -216,7 +216,6 @@ html {
     color: white;
     justify-content: center;
     align-items: center;
-    margin-top: 145px;
 }
 
 .learning-img-holder {
@@ -224,7 +223,7 @@ html {
 }
 
 .learning-content {
-    margin-top: 25px;
+    margin-bottom: 145px;
     display: flex;
     justify-content: center;
     align-items: center;
