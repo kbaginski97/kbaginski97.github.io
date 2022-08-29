@@ -18,7 +18,7 @@ html {
     width: 100%;
     height: 916px;
     background-color: #313F74;
-    background-image: url('/img/header.png');
+    background-image: url('img/header.png');
     background-repeat: no-repeat;
     background-position: top 0 right 0;
 }
@@ -135,7 +135,7 @@ html {
     background-color: #313F74;
     height: 816px;
     position: relative;
-    background-image: url('/img/Skills.png');
+    background-image: url('img/Skills.png');
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -292,7 +292,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/img/Contact.png');
+    background-image: url('img/Contact.png');
     background-repeat: no-repeat;
     background-position: right 0 bottom -10px;
     width: 100%;
