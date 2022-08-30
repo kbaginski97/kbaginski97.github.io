@@ -1,11 +1,10 @@
-// let navbar = document.getElementById("mainnav");
-// let menu = document.getElementById("menu");
+let hamburgerClosed = document.getElementsByClassName('hamburger-lines')[0];
 
-// window.onscroll = function () {
-//     if(window.pageYOffset >= menu.offsetTop) {
-//         navbar.classList.add("sticky");
-//     }
-//     else {
-//         navbar.classList.remove("sticky");
-//     }
-// }
+let navBarClosed = document.getElementsByClassName('main-header')[0];
+
+
+hamburgerClosed.addEventListener('click', function () {
+    hamburgerClosed.classList.toggle('hamburgerOpen');
+    navBarClosed.classList.toggle('menu-opened');
+});
+
