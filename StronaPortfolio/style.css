@@ -738,6 +738,10 @@ html {
 }
 
 @media all and (max-width:779px) {
+    .skills-content-holder h2 {
+        margin-block: 40px;
+    }
+
     .menu-opened .main-nav-holder {
         width: 100%;
         height: 100vh;
