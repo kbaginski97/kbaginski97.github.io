@@ -851,7 +851,7 @@ html {
     }
 
     .learning-content span {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .footer span {
@@ -875,10 +875,27 @@ html {
     .contact-img-holder img {
         max-height: 380px;
     }
+
+    #skillPrimarySpan {
+        font-size: 14px;
+    }
 }
 
 @media all and (max-width:420px) {
     .main-author-info h2 {
         font-size: 24px;
+    }
+
+    .learning-content span {
+        display: block;
+    }
+    .portfolio-content-holder p {
+        font-size: 14px;
+    }
+    .skill-subitem li {
+        font-size: 10px;
+    }
+    .skills-content-holder {
+        padding-inline: 10px;
     }
 }
