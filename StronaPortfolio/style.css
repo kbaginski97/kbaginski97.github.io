@@ -249,6 +249,10 @@ html {
     align-items: center;
 }
 
+.about-me-content p {
+    text-align: center;
+}
+
 .about-me-holder {
     max-width: 1200px;
     padding-inline: 20px;
@@ -259,6 +263,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .skills {
@@ -538,6 +543,10 @@ html {
         display: block;
     }
 
+    .about-me-content p {
+        font-size: 16px;
+    }
+
     .about-img-holder {
         display: flex;
         justify-content: center;
@@ -548,7 +557,7 @@ html {
 
     .about-me-content {
         width: 100%;
-        margin: 30px;
+        margin: 30px 0px;
         text-align: center;
     }
 
@@ -572,6 +581,7 @@ html {
         display: block;
         text-align: center;
     }
+
     .portfolio-item {
         width: 80%;
     }
@@ -754,11 +764,13 @@ html {
         height: 300px;
         object-fit: cover;
     }
+
     .portfolio-content-holder h3 {
         font-size: 22px;
     }
+
     .portfolio-content-holder p {
-        font-size:12px;
+        font-size: 12px;
     }
 }
 
@@ -766,27 +778,34 @@ html {
     .skill-item-holder {
         width: 100%;
     }
+
     .portfolio-item {
         width: 100%;
         padding: 10px;
 
     }
+
     .portfolio-content-holder p {
         font-size: 8px;
     }
+
     .portfolio-img-holder {
         height: auto;
         width: 90%;
     }
+
     .skill-item-holder .skill-item h3 {
         font-size: 20px;
     }
+
     .skill-item-holder .skill-item .skill-subitem li {
         font-size: 14px;
     }
-    .learning-content span{
-        font-size:14px ;
+
+    .learning-content span {
+        font-size: 14px;
     }
+
     .footer span {
         font-size: 16px;
     }
