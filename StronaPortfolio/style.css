@@ -276,6 +276,9 @@ html {
 
 .skills {
     background-color: #313F74;
+    background-image: url('img/Skills.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .skills-content-holder {
@@ -288,9 +291,6 @@ html {
 .skills-main-container {
     width: 100%;
     display: block;
-    background-image: url('img/Skills.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
 }
 
 .skills-main-container h2 {
