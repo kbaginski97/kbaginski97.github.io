@@ -372,8 +372,7 @@ html {
 .portfolio-item {
     display: flex;
     justify-content: space-between;
-    width: 963px;
-    height: 271px;
+    width: 50%;
     margin: auto;
     margin-bottom: 100px;
 }
@@ -390,12 +389,11 @@ html {
 
 .portfolio-img-holder {
     width: 49%;
-    height: 100%;
 }
 
 .portfolio-img-holder img {
     width: 100%;
-    height: 100%;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -554,6 +552,16 @@ html {
         text-align: center;
     }
 
+    .portfolio-img-holder {
+        width: 49%;
+    }
+
+    .portfolio-img-holder img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
     /* CONTACT */
     .contact-details-container {
         display: block;
@@ -563,6 +571,9 @@ html {
     .contact-details {
         display: block;
         text-align: center;
+    }
+    .portfolio-item {
+        width: 80%;
     }
 }
 
@@ -587,13 +598,14 @@ html {
         width: 50%;
         height: 100px;
     }
-    
+
 }
 
 @media all and (max-width:1024px) {
     .main-nav-bar ul {
         display: none;
     }
+
     .menu-opened .main-nav-holder {
         width: 100%;
         height: 100vh;
@@ -634,9 +646,11 @@ html {
     .menu-opened .author-container {
         display: none;
     }
+
     .skill-item-holder {
         width: 70%;
     }
+
     .portfolio-item {
         width: 100%;
         min-height: 300px;
@@ -657,7 +671,7 @@ html {
     }
 
     .portfolio-content-holder p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     /* Contact */
@@ -720,13 +734,56 @@ html {
         height: 49%;
         font-size: 16px;
     }
+
     .skill-item-holder {
         width: 100%;
+    }
+
+    .contact-details-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-img-holder {
+        width: 49%;
+    }
+
+    .portfolio-img-holder img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .portfolio-content-holder h3 {
+        font-size: 22px;
+    }
+    .portfolio-content-holder p {
+        font-size:12px;
     }
 }
 
 @media all and (max-width:576px) {
     .skill-item-holder {
         width: 100%;
+    }
+    .portfolio-item {
+        width: 100%;
+        padding: 10px;
+    }
+    .portfolio-content-holder p {
+        font-size: 8px;
+    }
+    .portfolio-img-holder {
+        height: 200px;
+        width: 90%;
+    }
+    .skill-item-holder .skill-item h3 {
+        font-size: 20px;
+    }
+    .skill-item-holder .skill-item .skill-subitem li {
+        font-size: 14px;
+    }
+    .learning-content span{
+        font-size:14px ;
     }
 }
