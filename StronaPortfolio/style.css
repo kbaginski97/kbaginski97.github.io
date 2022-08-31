@@ -7,9 +7,11 @@
 section {
     padding-block: 100px;
 }
+
 .section-footer {
-    padding-bottom: 0;
+    padding-block: 0px;
 }
+
 .about-me {
     padding-bottom: 50px;
 }
@@ -44,9 +46,11 @@ html {
     position: fixed;
     z-index: 10;
 }
+
 .bgscroll {
     background-color: #313F74;
 }
+
 .menu-opened .main-header-container {
     display: flex;
     background-color: #313F74;
@@ -311,15 +315,14 @@ html {
 
 .skill-item-holder {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 50%;
 }
 
 .skill-item {
     display: block;
+    flex-direction: column;
     text-align: center;
-    height: 200px;
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 26px;
@@ -350,6 +353,7 @@ html {
     color: white;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .learning-content {
@@ -734,7 +738,6 @@ html {
 }
 
 @media all and (max-width:779px) {
-
     .menu-opened .main-nav-holder {
         width: 100%;
         height: 100vh;
@@ -784,6 +787,9 @@ html {
 
     .skill-item-holder {
         width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 50px;
     }
 
     .contact-details-container {
@@ -794,10 +800,10 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: static;
         width: 50%;
-        right: 200px;
+        margin-inline: auto;
         max-height: 380px;
-        bottom: 100px;
     }
 
     .contact-img-holder img {
@@ -822,8 +828,17 @@ html {
         animation: author 3s ease-in-out;
     }
 
+    h2 {
+        font-size: 24px !important;
+    }
+
+    strong {
+        display: block;
+        font-size: 13px;
+    }
+
     .main-author-info h2 {
-        font-size: 34px;
+        font-size: 24px;
     }
 
     .main-author-info img {
