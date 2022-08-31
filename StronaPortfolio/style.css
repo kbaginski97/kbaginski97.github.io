@@ -5,7 +5,13 @@
 }
 
 section {
-    width: 100%;
+    padding-block: 100px;
+}
+.section-footer {
+    padding-bottom: 0;
+}
+.about-me {
+    padding-bottom: 50px;
 }
 
 li a:active,
@@ -233,7 +239,6 @@ html {
     font-size: 36px;
     text-align: center;
     color: #313F74;
-    padding: 60px;
 }
 
 .about-img-holder {
@@ -293,7 +298,6 @@ html {
     font-family: 'Poppins';
     font-size: 36px;
     color: white;
-    padding: 60px 0px;
 }
 
 .skills-main-holder {
@@ -889,12 +893,15 @@ html {
     .learning-content span {
         display: block;
     }
+
     .portfolio-content-holder p {
         font-size: 14px;
     }
+
     .skill-subitem li {
         font-size: 10px;
     }
+
     .skills-content-holder {
         padding-inline: 10px;
     }
