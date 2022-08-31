@@ -40,12 +40,13 @@ html {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #313F74;
     transition: 1s;
     position: fixed;
     z-index: 10;
 }
-
+.bgscroll {
+    background-color: #313F74;
+}
 .menu-opened .main-header-container {
     display: flex;
     background-color: #313F74;
@@ -152,7 +153,7 @@ html {
 
 .main-nav-bar li a:hover {
     cursor: pointer;
-    color: #427098;
+    color: grey;
 }
 
 .menu-opened li:hover {
