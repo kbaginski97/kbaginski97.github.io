@@ -189,10 +189,9 @@ html {
     background-position: top -200px right -50%;
 }
 
-.author-container h2 {
-    font-family: 'Sansation Light';
-    color: white;
-    font-weight: lighter;
+.author-container img {
+    height: 24px;
+    width: auto;
 }
 
 .header-content-holder {
@@ -202,17 +201,14 @@ html {
 }
 
 .main-author-info {
-    width: 50%;
+    width: auto;
     margin-left: 12%;
     animation: author 3s ease-in-out;
-
 }
 
-.main-author-info h1 {
-    font-size: 72px;
-    font-family: 'Sansation Light';
-    color: white;
-    font-weight: lighter;
+.main-author-info img {
+    width: auto;
+    object-fit: cover;
 }
 
 .main-author-info h2 {
@@ -447,13 +443,14 @@ html {
     position: relative;
 }
 
+.contact-img-holder {
+    width: 49;
+}
+
 .contact-details-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('img/Contact.png');
-    background-repeat: no-repeat;
-    background-position: right 0 bottom -10px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -470,7 +467,6 @@ html {
 .contact-details {
     display: block;
     text-align: left;
-
 }
 
 .contact-details span {
@@ -579,14 +575,34 @@ html {
     }
 
     /* CONTACT */
+    .main-contact-holder {
+        height: 600px;
+    }
+
     .contact-details-container {
-        display: block;
-        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .contact-img-holder {
+        width: 30%;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+    }
+
+    .contact-img-holder img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
     }
 
     .contact-details {
         display: block;
         text-align: center;
+        z-index: 1;
     }
 
     .portfolio-item {
@@ -691,6 +707,7 @@ html {
         width: 100%;
         height: 33%;
         padding: 20px;
+        margin: 0px;
     }
 
     .portfolio-content-holder p {
@@ -707,9 +724,14 @@ html {
         display: block;
         text-align: center;
     }
+
+    .contact-img-holder {
+        z-index: -1;
+        bottom: 45px;
+    }
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width:779px) {
 
     .menu-opened .main-nav-holder {
         width: 100%;
@@ -763,18 +785,49 @@ html {
     }
 
     .contact-details-container {
+        display: block;
+    }
+
+    .contact-img-holder {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50%;
+        right: 200px;
+        max-height: 380px;
+        bottom: 100px;
+    }
+
+    .contact-img-holder img {
+        max-height: 380px;
     }
 
     .portfolio-item {
         padding: 0px;
         margin-bottom: 0px;
     }
+
+    .contact-details {
+        margin: 20px 0px;
+    }
 }
 
 @media all and (max-width:576px) {
+
+    .main-author-info {
+        width: 100%;
+        margin: 0;
+        animation: author 3s ease-in-out;
+    }
+
+    .main-author-info h2 {
+        font-size: 34px;
+    }
+
+    .main-author-info img {
+        width: 90%;
+        object-fit: cover;
+    }
 
     .portfolio-content-holder {
         margin: 0;
@@ -787,7 +840,6 @@ html {
     .portfolio-item {
         width: 100%;
         padding: 10px;
-
     }
 
     .skill-item-holder .skill-item h3 {
@@ -808,5 +860,25 @@ html {
 
     .contact-details span {
         font-size: 20px;
+    }
+
+    .contact-img-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        left: 50px;
+        max-height: 380px;
+        bottom: 100px;
+    }
+
+    .contact-img-holder img {
+        max-height: 380px;
+    }
+}
+
+@media all and (max-width:420px) {
+    .main-author-info h2 {
+        font-size: 24px;
     }
 }
