@@ -5,4 +5,4 @@ Spa Center - trona wizytówkowa stworzona na potrzebę imitacji potencjalnej wiz
                         https://kbaginski97.github.io/SpaCenter/index.html
                         
                        
- Strona Portfolio - W trakcie budowy
+ Strona Portfolio - https://kbaginski97.github.io/StronaPortfolio/index.html
