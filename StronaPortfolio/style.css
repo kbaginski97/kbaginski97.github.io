@@ -872,10 +872,6 @@ html {
         font-size: 16px;
     }
 
-    .footer span {
-        font-size: 16px;
-    }
-
     .contact-details span {
         font-size: 20px;
     }
@@ -896,6 +892,17 @@ html {
 
     #skillPrimarySpan {
         font-size: 14px;
+    }
+
+    .footer span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        width:100%;
+    }
+    .footer strong {
+        font-size: 12px;
     }
 }
 
