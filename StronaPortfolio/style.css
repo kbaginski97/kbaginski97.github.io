@@ -8,10 +8,6 @@ section {
     padding-block: 100px;
 }
 
-.section-footer {
-    padding-block: 0px;
-}
-
 .about-me {
     padding-bottom: 50px;
 }
@@ -502,9 +498,6 @@ html {
     color: #313F74;
 }
 
-.section-footer {
-    position: relative;
-}
 
 .footer {
     display: flex;
@@ -516,6 +509,9 @@ html {
     height: 96px;
     color: white;
     font-family: 'Poppins';
+}
+.footer strong {
+    margin:5px ;
 }
 
 @keyframes author {
