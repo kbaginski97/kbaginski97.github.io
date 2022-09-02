@@ -63,16 +63,8 @@ html {
     animation: MenuTransform 1s ease-in-out;
 }
 
-.menu-opened .main-nav-bar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    transition: 1s;
-}
-
 .hamburger-lines {
-    display: block;
+    display: none;
     height: 26px;
     width: 32px;
     position: absolute;
@@ -142,7 +134,7 @@ html {
     padding-inline: 20px;
 }
 
-.main-nav-bar li {
+.main-nav-bar a {
     margin: 0 20px;
     display: inline-block;
     list-style: none;
@@ -152,18 +144,9 @@ html {
     white-space: nowrap;
 }
 
-.main-nav-bar li a:hover {
+.main-nav-bar a:hover {
     cursor: pointer;
     color: grey;
-}
-
-.menu-opened li:hover {
-    cursor: pointer;
-    color: #427098;
-}
-
-.main-nav-bar ul {
-    display: flex;
 }
 
 .container {
@@ -510,8 +493,9 @@ html {
     color: white;
     font-family: 'Poppins';
 }
+
 .footer strong {
-    margin:5px ;
+    margin: 5px;
 }
 
 @keyframes author {
@@ -544,7 +528,12 @@ html {
     }
 }
 
-@media all and (max-width:1200px) {
+@media all and (max-width:1262px) {
+    .main-nav-bar a {
+        font-size: 20px;
+        margin-inline: 10px;
+    }
+
     .about-main-container {
         display: block;
     }
@@ -638,7 +627,7 @@ html {
 }
 
 @media all and (max-width:1024px) {
-    .main-nav-bar ul {
+    .main-nav-bar a {
         display: none;
     }
 
@@ -651,10 +640,11 @@ html {
         display: block;
     }
 
-    .menu-opened .main-nav-bar li {
+    .menu-opened .main-nav-bar a {
         display: block;
         animation: liElements 2s ease-in-out;
         margin: 30px 0px;
+        font-size: 24px;
     }
 
     .menu-opened .author-container {
@@ -667,16 +657,6 @@ html {
     .menu-opened .main-nav-holder {
         width: 100%;
         height: 100vh;
-    }
-
-    .menu-opened .main-nav-holder ul {
-        display: block;
-    }
-
-    .menu-opened .main-nav-bar li {
-        display: block;
-        animation: liElements 2s ease-in-out;
-        margin: 30px 0px;
     }
 
     .menu-opened .author-container {
@@ -742,16 +722,6 @@ html {
     .menu-opened .main-nav-holder {
         width: 100%;
         height: 100vh;
-    }
-
-    .menu-opened .main-nav-holder ul {
-        display: block;
-    }
-
-    .menu-opened .main-nav-bar li {
-        display: block;
-        animation: liElements 2s ease-in-out;
-        margin: 30px 0px;
     }
 
     .menu-opened .author-container {
@@ -894,13 +864,14 @@ html {
         font-size: 14px;
     }
 
-    .footer span{
+    .footer span {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 12px;
-        width:100%;
+        width: 100%;
     }
+
     .footer strong {
         font-size: 12px;
     }
