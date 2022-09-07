@@ -1,0 +1,43 @@
+.container h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.offer-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .offer-item {
+        width: 30%;
+        border: 5px solid rgb(214, 191, 177);
+        border-radius: 30px;
+
+        h3{
+            text-align: center;
+        }
+        
+        .offer-content-holder {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .offer-img-holder {
+            width: 80%;
+            margin: 10px auto;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                border-radius: 30px;
+
+                &:hover {
+                    transform: translateY(-8px);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
