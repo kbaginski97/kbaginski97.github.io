@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link,
+a:visited,
+a:checked {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $header-font;
+    color: $header-color;
+}
+
+p {
+    font-size: 24px;
+    font-family: $primary-font;
+}
+
+.container {
+    max-width: 1240px;
+    padding-inline: 20px;
+    padding-bottom: 100px;
+    margin: auto;
+}
