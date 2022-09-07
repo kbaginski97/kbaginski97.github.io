@@ -269,7 +269,7 @@ p {
 }
 
 header {
-  background-image: url("/images/navbg.jpg");
+  background-image: url("../images/navbg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 816px;
