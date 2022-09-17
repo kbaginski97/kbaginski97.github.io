@@ -1,4 +1,4 @@
-const images = ["../images/Nashi.jpg", "../images/alfaparf.jpg", "../images/schwarzkopf.png"];
+const images = ["images/Nashi.jpg", "images/alfaparf.jpg", "images/schwarzkopf.png"];
 
 const carousel = document.querySelector(".cosmetics-carousel");
 const interval = setInterval(function () {
