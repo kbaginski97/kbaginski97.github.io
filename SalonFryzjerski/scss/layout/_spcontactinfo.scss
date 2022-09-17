@@ -1,0 +1,50 @@
+.contact-page-holder {
+    p {
+        padding-block: 30px;
+    }
+    .contact-item-holder {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+
+        .contact-item {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 49%;
+            text-align: center;
+
+            #phonenumber {
+                font-weight: bold;
+            }
+
+            iframe {
+                height: 80%;
+                padding-block: 20px;
+            }
+
+            hr {
+                width: 50%;
+            }
+
+            table {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+
+                .opens,
+                .closes {
+                    padding: 8px;
+                }
+
+                .day {
+                    text-align: left;
+                }
+
+            }
+
+        }
+
+    }
+}

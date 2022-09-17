@@ -1,8 +1,4 @@
 header {
-    background-image: url("../images/navbg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 816px;
     max-width: 2000px;
     margin: auto;
 }
@@ -11,8 +7,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
     img {
-        margin-left: 30px;
+        width: 200px;
+        height: 120px;
+        object-fit: contain;
     }
 
     .main-nav {
@@ -52,50 +53,65 @@ header {
     }
 }
 
-.header-contact {
-    display: block;
-    width: 35%;
-    text-align: center;
-    margin: 200px 0px 0px 100px;
-    letter-spacing: 1px;
-    #header-span1 {
-        font-family: $header-font;
-        font-size: 30px;
-        color: rgb(85, 81, 81);
-    }
 
-    #header-span2 {
-        font-family: $header-font;
-        font-size: 45px;
-        color: rgb(85, 81, 81);
-    }
-
-}
-
-.contact-btn {
+.main-page-container {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
-    margin-top: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url("../images/navbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 816px;
 
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: $header-font;
-        font-size: 40px;
-        color: white;
-        background-color: rgba(224, 62, 224, 0.329);
-        width: 70%;
-        height: 100px;
-        border-radius: 50px;
+    .header-contact {
+        display: block;
+        width: 35%;
+        height: 816px;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: 270px;
+        #header-span1 {
+            font-family: $header-font;
+            font-size: 30px;
+            color: rgb(85, 81, 81);
+        }
 
-        &:hover {
-            background-color: grey;
-            transform: translateX(10px);
-            transition: 0.3s;
+        #header-span2 {
+            font-family: $header-font;
+            font-size: 45px;
+            color: rgb(85, 81, 81);
+        }
+
+        .contact-btn {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-inline: auto;
+            margin-top: 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $header-font;
+                font-size: 40px;
+                color: white;
+                background-color: rgba(224, 62, 224, 0.329);
+                width: 70%;
+                height: 100px;
+                border-radius: 50px;
+
+                &:hover {
+                    background-color: grey;
+                    transform: translateX(10px);
+                    transition: 0.3s;
+                }
+            }
+
+            #callbtn {
+                animation: callbtn 3s infinite;
+            }
         }
     }
 }
