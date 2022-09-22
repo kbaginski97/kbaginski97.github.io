@@ -1085,9 +1085,10 @@ a:visited {
 
     .hero__wrapper__mid {
         margin-bottom: 300px;
+        margin-left: 30px;
     }
 
-    h1 {
+    .hero__wrapper__mid h1 {
         margin: 0;
         font-size: 48px;
     }
