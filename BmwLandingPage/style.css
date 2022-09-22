@@ -118,6 +118,14 @@ ul {
     background-color: black;
 }
 
+.menu-opened .hero__wrapper {
+    padding-bottom: 250px;
+}
+
+.menu-opened .hero__btn {
+    margin-bottom: 130px;
+}
+
 .menu-opened .hero__wrapper__mid {
     margin: auto;
 }
