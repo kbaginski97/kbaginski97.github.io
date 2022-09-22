@@ -323,7 +323,6 @@ ul {
     background-color: #3369d3;
 }
 
-
 a:link,
 a:active,
 a:visited {
@@ -805,11 +804,6 @@ a:visited {
 @media all and (max-width:992px) {
     .section-product-specifics {
         flex-direction: column-reverse;
-    }
-
-    .product-content-holder {
-        padding: 60px;
-        width: 100%;
     }
 
     .product-content-holder h2 {
