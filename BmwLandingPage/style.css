@@ -788,6 +788,9 @@ a:visited {
     .product-content-holder {
         margin-left: 20px;
     }
+    .product-img-holder {
+        margin-left: 20px;
+    }
 }
 
 @media all and (max-width:992px) {
