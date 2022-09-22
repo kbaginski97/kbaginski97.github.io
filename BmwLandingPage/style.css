@@ -783,6 +783,46 @@ a:visited {
     overflow: hidden;
 }
 
+
+@media all and (max-width:1700px) {
+    .product-content-holder {
+        margin-left: 20px;
+    }
+}
+
+@media all and (max-width:992px) {
+    .section-product-specifics {
+        flex-direction: column-reverse;
+    }
+
+    .product-content-holder {
+        padding: 60px;
+        width: 100%;
+    }
+
+    .product-content-holder h2 {
+        font-size: 34px;
+    }
+
+    .item-description-specifics span {
+        font-size: 18px;
+    }
+
+    .item-description-specifics p {
+        font-size: 15px;
+    }
+
+    .description-holder {
+        width: 100%;
+    }
+
+    .images-specifics {
+        width: 100%;
+
+    }
+
+}
+
 @media all and (max-width:1020px) {
     .contact {
         display: flex;
