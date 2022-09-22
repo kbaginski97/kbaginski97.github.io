@@ -87,7 +87,7 @@ ul {
 .menu-opened {
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 9999;
