@@ -80,7 +80,11 @@ ul {
     cursor: pointer;
 }
 
- .menu-opened {
+.hamburger-nav-men {
+    display: none;
+}
+
+.menu-opened {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -88,6 +92,54 @@ ul {
     height: 100%;
     z-index: 9999;
     background-color: black;
+}
+
+.menu-opened .hamburger-nav-men {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu-opened .hamburger-nav-men a {
+    margin-block: 30px;
+    font-family: "Cairo";
+    font-weight: bold;
+}
+
+.menu-opened .hero__slider__element {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: black;
+}
+
+.menu-opened .hero__wrapper__mid {
+    margin: auto;
+}
+
+.menu-opened .hero__wrapper__header .hamburger-lines {
+    right: 0;
+}
+
+.menu-opened .hero__wrapper__down__pagination {
+    display: none;
+}
+
+.menu-opened .hero__wrapper__mid__logo {
+    display: none;
+}
+
+.menu-opened .hero__wrapper__mid h1 {
+    display: none;
+}
+
+.menu-opened .hero__wrapper__mid span {
+    display: none;
 }
 
 /* ~~~~~~~~~~~~~~~ */
@@ -291,6 +343,12 @@ a:visited {
     margin-left: 30px;
     flex-direction: column;
     width: 49%;
+}
+
+.product-content-holder h2 {
+    font-size: 36px;
+    font-family: "Cairo";
+    line-height: 35px;
 }
 
 .product-content-holder-about img {
@@ -507,6 +565,10 @@ a:visited {
     margin-block: 20px;
     font-family: "Open Sans";
     font-size: 24px;
+}
+
+::placeholder {
+    padding-left: 10px;
 }
 
 #formSubmit:hover {
@@ -800,6 +862,10 @@ a:visited {
     .hamburger-lines {
         display: none;
     }
+
+    .menu-opened {
+        display: none;
+    }
 }
 
 @media all and (max-width:878px) {
@@ -1028,6 +1094,11 @@ a:visited {
 
     #sidecar {
         bottom: 80px;
+    }
+
+    #path12SideCar {
+        left: 120px;
+        bottom: 400px;
     }
 
 }

@@ -20,14 +20,16 @@ pagination.forEach((el) => {
 hamburgerClosed.addEventListener('click', function () {
     hamburgerClosed.classList.toggle('hamburgerOpen');
     navBarClosed.classList.toggle('menu-opened');
+    body.classList.toggle('overflowedbody');
 });
 
-// myLink.forEach(link => {
-//     link.addEventListener('click', () => {
-//         navBarClosed.classList.remove('menu-opened');
-//         hamburgerClosed.classList.remove('hamburgerOpen');
-//     })
-// })
+myLink.forEach(link => {
+    link.addEventListener('click', () => {
+        navBarClosed.classList.remove('menu-opened');
+        hamburgerClosed.classList.remove('hamburgerOpen');
+        body.classList.toggle('overflowedbody');
+    })
+})
 
 
 let submitBtn = document.getElementById('formSubmit');
