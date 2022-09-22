@@ -84,6 +84,26 @@ ul {
     display: none;
 }
 
+.innovation-item::after {
+    position: absolute;
+    content: '';
+    background-color: #343434;
+    height: 1px;
+    width: 250px;
+    margin: -20px auto;
+    left: 0;
+    right: 0;
+}
+
+.innovation-item::before {
+    position: absolute;
+    content: '';
+    background-color: #343434;
+    height: 1px;
+    width: 250px;
+    margin: 50px 50px 0px -20px;
+}
+
 .menu-opened {
     display: flex;
     justify-content: center;
@@ -103,7 +123,7 @@ ul {
 }
 
 .menu-opened .hamburger-nav-men a {
-    margin-block: 30px;
+    margin-block: 20px;
     font-family: "Cairo";
     font-weight: bold;
 }
