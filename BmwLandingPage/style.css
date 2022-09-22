@@ -363,6 +363,16 @@ a:visited {
     animation: upperPicMain 3s ease-in-out;
 }
 
+
+.loweredimg:hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: 0.4s;
+}
+#upperimg:hover {
+    transform: translateY(20px);
+    transition: 0.4s;
+}
 .upper-img {
     animation: downPicMain 2s ease-in-out;
 }
@@ -788,6 +798,7 @@ a:visited {
     .product-content-holder {
         margin-left: 20px;
     }
+
     .product-img-holder {
         margin-left: 20px;
     }
