@@ -1022,11 +1022,6 @@ a:visited {
         flex-direction: column-reverse;
     }
 
-    .product-content-holder {
-        padding: 60px;
-        width: 100%;
-    }
-
     .product-content-holder h2 {
         font-size: 24px;
     }
