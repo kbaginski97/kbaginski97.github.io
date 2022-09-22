@@ -1138,11 +1138,13 @@ a:visited {
 
     #sidecar {
         bottom: 80px;
+        object-fit: contain;
     }
 
     #path12SideCar {
         left: 120px;
         bottom: 400px;
+        object-fit: contain;
     }
 
 }
