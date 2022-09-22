@@ -1,6 +1,6 @@
 let hamb = document.getElementById('hamburger-closed');
 let hamburgerClosed = document.getElementsByClassName('hamburger-lines')[0];
-let navBarClosed = document.getElementsByClassName('hero')[0];
+let navBarClosed = document.getElementsByClassName('main-header')[0];
 let myLink = document.querySelectorAll('.menu-item');
 let mainHeader = document.getElementsByClassName('main-header')[0]
 let closeFormBtn = document.getElementsByClassName('closeform')[0];
@@ -22,12 +22,12 @@ hamburgerClosed.addEventListener('click', function () {
     navBarClosed.classList.toggle('menu-opened');
 });
 
-myLink.forEach(link => {
-    link.addEventListener('click', () => {
-        navBarClosed.classList.remove('menu-opened');
-        hamburgerClosed.classList.remove('hamburgerOpen');
-    })
-})
+// myLink.forEach(link => {
+//     link.addEventListener('click', () => {
+//         navBarClosed.classList.remove('menu-opened');
+//         hamburgerClosed.classList.remove('hamburgerOpen');
+//     })
+// })
 
 
 let submitBtn = document.getElementById('formSubmit');
