@@ -1,0 +1,189 @@
+.innovations-section {
+    display: flex;
+    padding-block: 120px;
+    padding-inline: 20px;
+
+    .innovations-content-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 49%;
+        margin-left: 100px;
+
+        span {
+            font-family: $secondary-font;
+            color: #707070;
+            font-size: 20px;
+            margin-top: 25px;
+        }
+
+        p {
+            font-family: $secondary-font;
+            color: #4E4E4E;
+            font-size: 20px;
+            margin-top: 25px;
+            text-align: left;
+            width: 536px;
+        }
+    }
+
+    .innovations-img-holder {
+        display: flex;
+        width: 49%;
+
+        .upper-innovations-img {
+            margin-bottom: 360px;
+            margin-left: 16px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .down-innovations-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.car-gallery-pictures {
+    padding-block: 171px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media all and(max-width:1222px) {
+    .innovations-section {
+        flex-direction: column-reverse;
+
+        .innovations-content-holder {
+            margin: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .innovations-img-holder {
+            width: 100%;
+            margin-bottom: 90px;
+
+            .down-innovations-img {
+                width: 70%;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            .upper-innovations-img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media all and (min-width:768px) {
+    #car-gallery-XS {
+        display: none;
+    }
+}
+
+@media all and (max-width:768px) {
+    .innovations-section {
+        padding-inline: 0px;
+
+        .innovations-img-holder {
+
+            .upper-innovations-img {
+                margin-bottom: 260px;
+            }
+        }
+
+        .innovations-content-holder {
+            padding-inline: 100px;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+
+    #car-gallery-XL {
+        display: none;
+    }
+
+    #car-gallery-XS {
+        width: 100%;
+        object-fit: cover;
+        padding-inline: 10px;
+    }
+}
+
+@media all and (max-width:668px) {
+    .innovations-section {
+        .innovations-content-holder {
+            padding-inline: 30px;
+
+            span {
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            p {
+                font-family: $details-font;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media all and(max-width:424px) {
+    .innovations-section {
+        flex-direction: column-reverse;
+        padding-bottom: 60px;
+
+        .innovations-content-holder {
+            margin: auto;
+            width: 100%;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .innovations-img-holder {
+            width: 100%;
+            margin-bottom: 90px;
+
+            .down-innovations-img {
+                width: 70%;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            .upper-innovations-img {
+                width: 40%;
+                margin-bottom: 140px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .car-gallery-pictures {
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,201 @@
+.swiper-menu {
+
+    .hamburger-lines {
+        height: 26px;
+        width: 32px;
+        position: relative;
+        top: 15px;
+        left: 30px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .line {
+            height: 2px;
+            width: 100%;
+            border-radius: 10px;
+            background: #ffff;
+        }
+
+        .line1 {
+            transform-origin: 0% 0%;
+            transition: 0.3s ease-in-out;
+        }
+
+        .line2 {
+            transition: 0.3s ease-in-out;
+        }
+
+        .line3 {
+            transform-origin: 0% 100%;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    .hamburgerOpen {
+        position: relative;
+        top: 100px;
+        left: 272px;
+
+        &::before {
+            position: absolute;
+            content: " ";
+            width: 500px;
+            border: 1px solid #343434;
+            left: -500px;
+            bottom: 50px;
+        }
+
+        .line1 {
+            transform: rotate(50deg);
+            background-color: #858585;
+        }
+
+        .line2 {
+            transform: scaleY(0);
+        }
+
+        .line3 {
+            transform: rotate(-50deg);
+            background-color: #858585;
+        }
+
+    }
+}
+
+.hamburger-nav {
+    display: none;
+}
+
+.menu-opened {
+    .swiper-holder {
+        .swiper {
+            .swiper-menu {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                z-index: 9999;
+                position: fixed;
+
+                .hamburger-nav {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+
+                    a {
+                        font-size: 16px;
+                        font-family: $primary-font;
+                        color: #ffff;
+                        text-decoration: none;
+                        font-weight: bold;
+                        margin-block: 20px;
+
+                        &:link,
+                        :visited,
+                        :active {
+                            text-decoration: none;
+                            color: #ffff;
+                        }
+
+                        &:nth-last-child(1) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 269px;
+                            height: 46px;
+                            background-color: #3369D3;
+                            font-size: 14px;
+                            font-family: $primary-font;
+                            margin-top: 128px;
+                        }
+                    }
+
+                    .innovations-link {
+                        position: relative;
+                        margin: 30px;
+
+                        &::after {
+                            position: absolute;
+                            content: " ";
+                            width: 250px;
+                            height: 1px;
+                            background-color: #343434;
+                            margin: -20px 50px 0px -20px;
+                            left: 0;
+                            right: 0;
+                        }
+
+                        &::before {
+                            position: absolute;
+                            content: " ";
+                            width: 250px;
+                            height: 1px;
+                            background-color: #343434;
+                            margin: 50px 50px 0px -20px;
+                            left: 0;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width:887px) {
+
+    .menu-opened {
+        display: none;
+    }
+
+    .swiper-menu {
+
+        .hamburger-lines {
+            display: none;
+        }
+
+    }
+
+}
+
+@media all and(max-width:886px) {
+    .swiper-menu {
+    .hamburgerOpen {
+        position: relative;
+        top: 100px;
+        left: 91%;
+
+        &::before {
+            position: absolute;
+            content: " ";
+            width: 750px;
+            border: 1px solid #343434;
+            left: -800px;
+            bottom: 50px;
+        }
+    }
+}
+}
+
+@media all and(max-width:440px) {
+    .swiper-menu {
+    .hamburgerOpen {
+        position: relative;
+        top: 100px;
+        left: 78%;
+
+        &::before {
+            position: absolute;
+            content: " ";
+            width: 750px;
+            border: 1px solid #343434;
+            left: -800px;
+            bottom: 50px;
+        }
+    }
+}
+}

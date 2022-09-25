@@ -1,0 +1,434 @@
+.testdrive-contact {
+    display: flex;
+    padding-block: 120px;
+    position: relative;
+
+    .contact-form-holder {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+        padding-block: 90px;
+        width: 812px;
+        height: auto;
+        box-shadow: 3px 3px 60px #00000012;
+        background-color: #fff;
+        position: relative;
+        z-index: 5;
+
+        .contact-form-text-content {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: left;
+            padding: 0 90px 90px 90px;
+
+            h2 {
+                sup {
+                    font-family: $primary-font;
+                    color: black;
+                    font-size: 36px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                font-family: $secondary-font;
+                line-height: 40px;
+                color: #707070;
+                margin-top: 15px;
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            padding: 0 90px 90px 90px;
+
+            .main-form {
+                text-align: left;
+                width: 100%;
+
+                input[type=name],
+                input[type=email],
+                input[type=tel] {
+                    width: 90%;
+                    height: 52px;
+                    border: 1px solid #DCDCDC;
+                    margin-bottom: 30px;
+                }
+
+                & input::placeholder {
+                    padding-left: 22px;
+                    color: #4E4E4E;
+                    font-family: $secondary-font ;
+                }
+
+                input[type=radio] {
+                    width: 22px;
+                    height: 22px;
+                    margin-inline: 10px;
+                    margin-block: 30px;
+                }
+
+                input[type=submit] {
+                    color: #fff;
+                    background-color: #3369D3;
+                    height: 63px;
+                    width: 243px;
+                    text-transform: uppercase;
+                    border: none;
+                }
+
+                label {
+                    color: #707070;
+                    font-family: $secondary-font;
+                }
+            }
+        }
+
+    }
+}
+
+#sidecar {
+    object-fit: contain;
+    position: absolute;
+    z-index: -5;
+    bottom: 0;
+    left: 10%;
+}
+
+#sidecarpath {
+    object-fit: contain;
+    position: absolute;
+    z-index: -6;
+    bottom: 200px;
+    left: 8%;
+}
+
+#frontcar {
+    object-fit: contain;
+    position: absolute;
+    z-index: -6;
+    right: 8%;
+    top: 300px;
+}
+
+#frontcarpath {
+    object-fit: contain;
+    position: absolute;
+    z-index: -7;
+    right: 10%;
+    top: 380px;
+    transform: rotate(100deg);
+}
+
+#leftsidedpath {
+    object-fit: contain;
+    position: absolute;
+    z-index: -7;
+    left: 20%;
+    top: 280px;
+    transform: rotate(170deg);
+}
+
+#downsidepath {
+    object-fit: contain;
+    position: absolute;
+    z-index: -7;
+    bottom: -30px;
+    right: 30%;
+    transform: rotate(110deg);
+}
+
+@media all and (max-width:1700px) {
+    #frontcar {
+        object-fit: contain;
+        position: absolute;
+        z-index: -6;
+        right: 0;
+        top: 300px;
+    }
+
+    #frontcarpath {
+        object-fit: contain;
+        position: absolute;
+        z-index: -7;
+        right: 4%;
+        top: 380px;
+        transform: rotate(100deg);
+    }
+
+    #sidecar {
+        object-fit: contain;
+        position: absolute;
+        z-index: -5;
+        bottom: 0;
+        left: 7%;
+    }
+
+    #sidecarpath {
+        object-fit: contain;
+        position: absolute;
+        z-index: -6;
+        bottom: 200px;
+        left: 6%;
+    }
+}
+
+@media all and (min-width:830px) {
+    #sidecarXs {
+        display: none;
+    }
+
+    #sidecarpathXs {
+        display: none;
+    }
+
+    #frontcarXs {
+        display: none;
+    }
+
+    #frontcarpathXs {
+        display: none;
+    }
+}
+
+@media all and (max-width:830px) {
+    .testdrive-contact {
+        padding-block: 200px;
+
+        .contact-form-holder {
+            .contact-form {
+                padding: 0px 0px 20px 20px;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    font-size: 40px;
+                }
+
+                .main-form {
+                    width: 70%;
+                    margin: auto;
+
+                    label {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    #leftsidedpath {
+        display: none;
+    }
+
+    #downsidepath {
+        display: none;
+    }
+
+    #sidecarpath {
+        display: none;
+    }
+
+    #frontcarpath {
+        display: none;
+    }
+
+    #sidecar {
+        display: none;
+
+    }
+
+    .testdrive-contact {
+        overflow: hidden;
+        padding-block: 0;
+        padding-top: 280px;
+    }
+
+    #sidecarXs {
+        position: relative;
+        bottom: 100px;
+        right: -50%;
+    }
+
+    #sidecarpathXs {
+        position: absolute;
+        bottom: 430px;
+        right: -100px;
+        z-index: -4;
+    }
+
+    #frontcar {
+        display: none;
+    }
+
+    #frontcarXs {
+        position: absolute;
+        top: -70px;
+        left: -220px;
+        object-fit: contain;
+        z-index: 7;
+    }
+
+    #frontcarpathXs {
+        position: absolute;
+        top: 200px;
+        left: -50px;
+        object-fit: contain;
+        transform: rotate(100deg);
+        z-index: 6;
+    }
+
+    .contact-form-text-content {
+        h2 {
+            z-index: 9999;
+            position: relative;
+        }
+    }
+
+}
+
+@media all and (max-width:678px) {
+    #sidecarXs {
+        position: relative;
+        bottom: 60px;
+        right: -50%;
+    }
+
+    #sidecarpathXs {
+        position: absolute;
+        bottom: 420px;
+        right: -100px;
+        z-index: -4;
+    }
+}
+
+
+@media all and (max-width:688px) {
+    .testdrive-contact {
+        .contact-form-holder {
+            width: 100%;
+
+            .contact-form-text-content {
+                h2 {
+                    sup {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .contact-form {
+                .main-form {
+                    width: 80%;
+                }
+            }
+        }
+
+    }
+}
+
+@media all and (max-width:588px) {
+    #sidecarXs {
+        position: relative;
+        bottom: 60px;
+        right: -55%;
+    }
+
+    #sidecarpathXs {
+        position: absolute;
+        bottom: 420px;
+        right: -100px;
+        z-index: -4;
+    }
+}
+
+@media all and (max-width:544px) {
+    .testdrive-contact {
+        .contact-form-holder {
+            .contact-form-text-content {
+                padding-inline: 36px;
+
+                h2 {
+                    font-size: 24px;
+
+                    sup {
+                        font-size: 20px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .contact-form {
+                h3 {
+                    font-size: 20px;
+                }
+
+                .main-form {
+                    width: 100%;
+
+                    input[type=radio] {
+                        font-family: $details-font;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:360px) {
+    .testdrive-contact {
+        .contact-form-holder {
+            .contact-form-text-content {
+                padding-inline: 10px;
+                padding-block: 60px;
+
+                h2 {
+                    font-size: 24px;
+
+                    sup {
+                        font-size: 20px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .contact-form {
+                padding-inline: 10px;
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                .main-form {
+                    width: 100%;
+                    text-align: center;
+
+                    input[type=radio] {
+                        font-family: $details-font;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

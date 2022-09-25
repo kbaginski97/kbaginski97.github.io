@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: $primary-font;
+    color: #000000;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.section-about {
+    display: flex;
+    padding-top: 180px;
+    padding-inline: 20px;
+}
+
+.section-about,
+.innovations-section,
+.car-gallery-pictures,
+.testdrive-contact {
+    max-width: 1900px;
+    margin: auto;
+}
+
+.overflowedbody {
+    overflow: hidden;
+}
+
+@media all and (max-width:668px) {
+    h2 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
