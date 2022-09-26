@@ -39,15 +39,6 @@
         top: 100px;
         left: 272px;
 
-        &::before {
-            position: absolute;
-            content: " ";
-            width: 500px;
-            border: 1px solid #343434;
-            left: -500px;
-            bottom: 50px;
-        }
-
         .line1 {
             transform: rotate(50deg);
             background-color: #858585;
@@ -164,38 +155,20 @@
 
 @media all and(max-width:886px) {
     .swiper-menu {
-    .hamburgerOpen {
-        position: relative;
-        top: 100px;
-        left: 91%;
-
-        &::before {
-            position: absolute;
-            content: " ";
-            width: 750px;
-            border: 1px solid #343434;
-            left: -800px;
-            bottom: 50px;
+        .hamburgerOpen {
+            position: relative;
+            top: 100px;
+            left: 91%;
         }
     }
-}
 }
 
 @media all and(max-width:440px) {
     .swiper-menu {
-    .hamburgerOpen {
-        position: relative;
-        top: 100px;
-        left: 78%;
-
-        &::before {
-            position: absolute;
-            content: " ";
-            width: 750px;
-            border: 1px solid #343434;
-            left: -800px;
-            bottom: 50px;
+        .hamburgerOpen {
+            position: relative;
+            top: 100px;
+            left: 78%;
         }
     }
-}
 }

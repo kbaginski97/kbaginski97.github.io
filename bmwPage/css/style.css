@@ -1383,14 +1383,6 @@ footer {
   top: 100px;
   left: 272px;
 }
-.swiper-menu .hamburgerOpen::before {
-  position: absolute;
-  content: " ";
-  width: 500px;
-  border: 1px solid #343434;
-  left: -500px;
-  bottom: 50px;
-}
 .swiper-menu .hamburgerOpen .line1 {
   transform: rotate(50deg);
   background-color: #858585;
@@ -1444,7 +1436,7 @@ footer {
   background-color: #3369D3;
   font-size: 14px;
   font-family: "Cairo";
-  margin-top: 128px;
+  margin-top: 100px;
 }
 .menu-opened .swiper-holder .swiper .swiper-menu .hamburger-nav .innovations-link {
   position: relative;
@@ -1484,27 +1476,11 @@ footer {
     top: 100px;
     left: 91%;
   }
-  .swiper-menu .hamburgerOpen::before {
-    position: absolute;
-    content: " ";
-    width: 750px;
-    border: 1px solid #343434;
-    left: -800px;
-    bottom: 50px;
-  }
 }
 @media all and (max-width: 440px) {
   .swiper-menu .hamburgerOpen {
     position: relative;
     top: 100px;
     left: 78%;
-  }
-  .swiper-menu .hamburgerOpen::before {
-    position: absolute;
-    content: " ";
-    width: 750px;
-    border: 1px solid #343434;
-    left: -800px;
-    bottom: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
