@@ -391,7 +391,7 @@ h2 {
 }
 .swiper-holder .swiper-button {
   width: 372px;
-  height: 62px;
+  min-height: 62px;
   background: #3369D3;
   font-family: "Cairo";
   color: #fff;
