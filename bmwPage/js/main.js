@@ -7,6 +7,7 @@ let closeFormBtn = document.getElementsByClassName('closeform')[0];
 let SwiperImg = document.getElementsByClassName('swiper-menu')[0];
 let body = document.querySelector('body');
 
+let swiperBtn = document.getElementsByClassName('swiper-button')[0];
 
 var swiper = new Swiper(".mySwiper", {
     pagination: {
@@ -19,6 +20,9 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+swiperBtn.addEventListener('click', function () {
+    location.href = "#testdrive";
+})
 
 hamburgerClosed.addEventListener('click', function () {
     hamburgerClosed.classList.toggle('hamburgerOpen');

@@ -334,6 +334,9 @@ h2 {
   margin-left: 60px;
   font-weight: bold;
 }
+.swiper-holder .swiper .main-nav a:hover {
+  color: #D6D6D6;
+}
 .swiper-holder .swiper .main-nav :visited,
 .swiper-holder .swiper .main-nav :link,
 .swiper-holder .swiper .main-nav :active {
@@ -398,6 +401,10 @@ h2 {
   border: none;
   margin: auto;
   margin-bottom: 50px;
+}
+.swiper-holder .swiper-button:hover {
+  color: black;
+  background-color: #858585;
 }
 .swiper-holder .swiper-pagination {
   display: flex;
