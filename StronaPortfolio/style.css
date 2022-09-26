@@ -390,6 +390,9 @@ html {
     height: 350px;
     object-fit: cover;
 }
+#bmwpage {
+    width: 100%;
+}
 
 .portfolio-content-holder h3 {
     font-family: 'Poppins';
