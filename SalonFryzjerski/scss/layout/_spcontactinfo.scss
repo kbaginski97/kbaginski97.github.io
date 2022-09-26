@@ -1,16 +1,18 @@
 .contact-page-holder {
+    border: 3px solid rgb(214, 191, 177);
+    margin-block: 60px;
+
     p {
         padding-block: 30px;
+
     }
+
     .contact-item-holder {
         display: flex;
         justify-content: space-between;
         padding: 50px;
 
         .contact-item {
-            display: block;
-            justify-content: center;
-            align-items: center;
             width: 49%;
             text-align: center;
 
@@ -18,13 +20,9 @@
                 font-weight: bold;
             }
 
-            iframe {
-                height: 80%;
-                padding-block: 20px;
-            }
-
             hr {
                 width: 50%;
+                background-color: white;
             }
 
             table {
@@ -46,5 +44,20 @@
 
         }
 
+    }
+
+    .contact-item-map {
+        width: 100%;
+
+        h3 {
+            text-align: center;
+            background-color: rgb(214, 191, 177);
+            border-radius: 15px;
+        }
+
+        iframe {
+            width: 100%;
+            padding-block: 20px;
+        }
     }
 }

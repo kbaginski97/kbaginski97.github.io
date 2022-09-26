@@ -18,16 +18,20 @@
 <body>
     <header>
         <div class="main-nav-holder">
-            <img src="images/logo.png" alt="SalonFryzjerski" />
+            <div class="nav-img-holder">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="SalonFryzjerski" />
+                </a>
+            </div>
             <nav class="main-nav">
                 <a href="index.html">Strona Główna</a>
-                <a href="">Galeria</a>
-                <a href="Kontakt.html">Kontakt</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="kontakt.html">Kontakt</a>
             </nav>
         </div>
     </header>
-    <main>
 
+    <main>
         <section class="main-page">
             <div class="main-page-container">
                 <div class="header-contact">
@@ -47,15 +51,8 @@
                     asperiores rerum veniam distinctio dolor! Amet, unde laudantium?</p>
                 <div class="contact-item-holder">
                     <div class="contact-item">
-                        <h3>Nasza Lokalizacja</h3>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320.2086210754369!2d19.947018699999997!3d50.0550322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1536720c5d%3A0xa63671ce0d4ffc5f!2sDeSilie%20Studio!5e0!3m2!1spl!2spl!4v1663149262195!5m2!1spl!2spl"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  
-                    </div>
-                    <div class="contact-item">
                         <h3>Godziny Otwarcia</h3>
+                        <hr>
                         <table class="opening-hours-table">
                             <tr id="monday" title="Otwarte w Poniedziałek od 09:00 do 19:00">
                                 <td class="day">Poniedziałek</td>
@@ -97,17 +94,28 @@
                                 <td class="closes">19:00</td>
                             </tr>
                         </table>
-                        <hr>
-                        <h3>Numer kontaktowy </h3>
-                        <span id="phonenumber">tel. 12 431-10-24</span>
                     </div>
+                    <div class="contact-item">
+                        <h3 id="phonenumber">Numer kontaktowy </h3>
+                        <hr>
+                        <span>tel. 12 431-10-24</span>
+                    </div>
+                </div>
+                <div class="contact-item-map">
+                    <h3>Nasza Lokalizacja</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320.2086210754369!2d19.947018699999997!3d50.0550322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1536720c5d%3A0xa63671ce0d4ffc5f!2sDeSilie%20Studio!5e0!3m2!1spl!2spl!4v1663149262195!5m2!1spl!2spl"
+                        width="1200" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
         <footer>
-        
+            <div class="copyrights-text">
+                <span>© Copyright 2021 Studio De'SILIE . Wszelkie prawa zastrzeżone.</span>
+            </div>
         </footer>
-        <script src="main.js"> </script>
+        <!-- <script src="main.js"> </script> -->
 </body>
 
 </html>

@@ -32,4 +32,10 @@ p {
     padding-inline: 20px;
     padding-bottom: 100px;
     margin: auto;
+
+    @media all and (max-width:768px) {
+        max-width: 100%;
+        padding-inline: 0px;
+        margin: 0;
+    }
 }

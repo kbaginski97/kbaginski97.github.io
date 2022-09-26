@@ -24,8 +24,7 @@
             position: relative;
             font-family: 'Poppins';
 
-            &::before
-             {
+            &::before {
                 position: absolute;
                 content: '';
                 width: 60px;
@@ -52,4 +51,20 @@
     color: rgb(56, 55, 55);
     background-color: rgb(201, 179, 166);
     height: 50px;
+}
+
+@media all and (max-width:786px) {
+
+    .footer-holder {
+        .footer-item {
+            .f-contact-span {
+                margin-left: 10px;
+            }
+
+            .s-contact-span {
+                margin-left: 10px;
+            }
+        }
+    }
+
 }
