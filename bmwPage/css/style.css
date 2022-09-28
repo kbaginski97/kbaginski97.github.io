@@ -289,6 +289,7 @@ h2 {
   min-height: 900px;
   position: relative;
   margin: auto;
+  max-width: 3000px;
 }
 .swiper-holder .swiper {
   height: 100%;
@@ -430,6 +431,11 @@ h2 {
 @media all and (max-width: 1650px) {
   .swiper-holder .swiper .swiper-menu img {
     right: 5%;
+  }
+}
+@media all and (max-width: 1550px) {
+  .swiper-holder .swiper .swiper-mid .mid-content {
+    margin-left: 30px;
   }
 }
 @media all and (max-width: 1225px) {
@@ -1356,6 +1362,58 @@ footer {
     font-size: 20px;
   }
 }
+@media all and (max-width: 350px) {
+  footer {
+    padding-top: 0px;
+  }
+  .footer-container {
+    height: auto;
+  }
+  .footer-container .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 90px;
+    padding-inline: 30px;
+  }
+  .footer-container .footer-links::before {
+    width: 74%;
+  }
+  .footer-container .footer-links h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+  }
+  .footer-container .footer-links .social-media {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-container .footer-links .social-media a {
+    padding-inline: 0;
+    padding-right: 20px;
+  }
+  .footer-container .footer-content-holder {
+    flex-direction: column;
+    width: 60%;
+  }
+  .footer-container .footer-content-holder .footer-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    padding-bottom: 60px;
+  }
+  .footer-container .footer-content-holder .footer-content-item a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer-container .footer-content-holder .footer-content-item h3 {
+    font-size: 20px;
+  }
+}
 .swiper-menu .hamburger-lines {
   height: 26px;
   width: 32px;
@@ -1484,10 +1542,24 @@ footer {
     left: 91%;
   }
 }
+@media all and (max-width: 666px) {
+  .swiper-menu .hamburgerOpen {
+    position: relative;
+    top: 100px;
+    left: 88%;
+  }
+}
+@media all and (max-width: 548px) {
+  .swiper-menu .hamburgerOpen {
+    position: relative;
+    top: 100px;
+    left: 85%;
+  }
+}
 @media all and (max-width: 440px) {
   .swiper-menu .hamburgerOpen {
     position: relative;
     top: 100px;
-    left: 78%;
+    left: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

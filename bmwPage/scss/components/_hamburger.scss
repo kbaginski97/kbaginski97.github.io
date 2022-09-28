@@ -163,12 +163,33 @@
     }
 }
 
+@media all and(max-width:666px) {
+    .swiper-menu {
+        .hamburgerOpen {
+            position: relative;
+            top: 100px;
+            left: 88%;
+        }
+    }
+}
+
+@media all and(max-width:548px) {
+    .swiper-menu {
+        .hamburgerOpen {
+            position: relative;
+            top: 100px;
+            left: 85%;
+        }
+    }
+}
+
+
 @media all and(max-width:440px) {
     .swiper-menu {
         .hamburgerOpen {
             position: relative;
             top: 100px;
-            left: 78%;
+            left: 80%;
         }
     }
 }
