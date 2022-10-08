@@ -334,7 +334,7 @@ input[type=checkbox], input[type=radio] {
   margin: 0;
   overflow: hidden;
 }
-@media all and (max-width: 630px) {
+@media all and (max-height: 700px) {
   .main-page {
     height: auto;
   }
@@ -481,7 +481,7 @@ input[type=checkbox], input[type=radio] {
   margin: 0;
   overflow: hidden;
 }
-@media all and (max-width: 630px) {
+@media all and (max-height: 700px) {
   .destination {
     height: auto;
   }
@@ -743,7 +743,7 @@ input[type=checkbox], input[type=radio] {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-@media all and (max-width: 630px) {
+@media all and (max-height: 700px) {
   .crew {
     height: auto;
   }
@@ -922,7 +922,7 @@ input[type=checkbox], input[type=radio] {
   background-repeat: no-repeat;
   background-image: url("../css/images/technologybg.jpg");
 }
-@media all and (max-width: 630px) {
+@media all and (max-height: 700px) {
   .technology {
     height: auto;
   }
