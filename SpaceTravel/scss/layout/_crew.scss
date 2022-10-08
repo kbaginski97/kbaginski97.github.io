@@ -8,7 +8,6 @@
     @media all and (max-width:630px) {
         height: auto;
     }
-
     h5 {
         font-family: $navigation-font;
         font-size: 28px;
@@ -18,7 +17,6 @@
         letter-spacing: 4.72px;
         margin: 0;
         padding: 212px 0px 0px 165px;
-
         span {
             margin-right: 24px;
             font-family: $navigation-font;
@@ -27,7 +25,6 @@
 
         }
     }
-
     .swiper {
         position: relative;
 
@@ -104,10 +101,9 @@
         }
     }
 }
-
 @media all and (max-width:1230px) {
     .crew {
-        background-image: url('/css/images/tabletbg.png');
+        background-image: url('../css/images/tabletbg.png');
 
         .container {
             h5 {
