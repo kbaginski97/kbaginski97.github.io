@@ -920,6 +920,11 @@ input[type=checkbox], input[type=radio] {
   background-repeat: no-repeat;
   background-image: url("../css/images/technologybg.jpg");
 }
+@media all and (max-height: 844px) {
+  .technology {
+    height: auto;
+  }
+}
 .technology .container h3 {
   font-size: 28px;
   font-family: "Barlow Condensed", sans-serif;

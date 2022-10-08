@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     background-image: url('../css/images/technologybg.jpg');
 
+    @media all and (max-height:844px) {
+        height: auto;
+    }
     .container {
         h3 {
             font-size: 28px;
