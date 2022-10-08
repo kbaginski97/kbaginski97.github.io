@@ -92,11 +92,10 @@
     margin: 0;
     overflow: hidden;
 
-
-    @media all and (max-height:1000px) {
+    @media all and (max-height:844px) {
         height: auto;
     }
-
+    
     .main-container {
         display: flex;
         justify-content: space-between;
