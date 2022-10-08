@@ -1,0 +1,268 @@
+.destination {
+    background-image: url('/css/images/destination.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    @media all and (max-width:630px) {
+        height: auto;
+    }
+    h3 {
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        color: #fff;
+        font-weight: lighter;
+        font-family: $navigation-font;
+        margin-top: 200px;
+        margin-left: 200px;
+        margin-bottom: 97px;
+        text-transform: uppercase;
+
+        @media all and (max-width:1081px) {
+            margin-bottom: 30px;
+            margin-top: 110px;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+
+        @media all and (max-width:630px) {
+            margin-bottom: 30px;
+            margin-top: 110px;
+            margin-inline: auto;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        span {
+            font-size: 28px;
+            font-family: $navigation-font;
+            font-weight: bold;
+            color: #fff;
+            opacity: 25%;
+            letter-spacing: 4.72px;
+            margin-right: 28px;
+
+            @media all and (max-width:1081px) {
+                font-size: 20px;
+            }
+
+
+            @media all and (max-width:630px) {
+                margin-right: 18px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .destination-main-container {
+        display: flex;
+        justify-content: space-between;
+
+        .destination-img {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                animation: rotatePlanet 135s infinite;
+
+                @media all and (max-width:1081px) {
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 30px;
+                }
+            }
+
+        }
+
+        .destination-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+
+            h2 {
+                color: #fff;
+                font-size: 100px;
+                font-family: $headers-font;
+                margin-top: 37px;
+                margin-bottom: 14px;
+                font-weight: 300;
+
+                @media all and (max-width:1081px) {
+                    font-size: 80px;
+                    margin-top: 32px;
+                    margin-bottom: 8px;
+                }
+
+                @media all and (max-width:630px) {
+                    font-size: 56px;
+                }
+
+            }
+
+            p {
+                @include page-description;
+                word-wrap: break-word;
+                width: 50%;
+
+                @media all and (max-width:1081px) {
+                    width: 100%;
+                    font-size: 16px;
+                }
+
+                @media all and (max-width:630px) {
+                    text-align: center;
+                    line-height: 25px;
+                    font-size: 15px;
+                }
+            }
+
+            .destination-menu {
+                a {
+                    color: #fff;
+                    margin-right: 35px;
+                    font-family: $navigation-font;
+                    font-size: 16px;
+
+                    &:link,
+                    :checked,
+                    :visited {
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        color: gray;
+                    }
+
+                    @media all and (max-width:630px) {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+            @media all and (max-width:1081px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media all and (max-width:630px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+            }
+
+            @media all and (max-width:420px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+            }
+
+        }
+
+        .destination-travel {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 50%;
+            margin-top: 34px;
+
+            @media all and (max-width:1081px) {
+                width: 100%;
+            }
+
+            &::before {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+                opacity: 25%;
+                content: " ";
+                top: 0;
+
+                @media all and (max-width:1081px) {
+                    width: 130%;
+                    left: -80px;
+                }
+
+                @media all and (max-width:630px) {
+                    width: 120%;
+                    left: -10%;
+                }
+            }
+
+            h5 {
+                font-size: 14px;
+                letter-spacing: 2.36px;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: $navigation-font;
+                font-weight: lighter;
+
+                @media all and (max-width:1081px) {
+                    font-size: 14px;
+                }
+            }
+
+            span {
+                font-size: 28px;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: $headers-font;
+                font-weight: lighter;
+
+                @media all and (max-width:630px) {
+                    font-size: 24px;
+                }
+            }
+
+            .travel-time {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                @media all and (max-width:1081px) {
+                    width: 50%;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .distance {
+                @media all and (max-width:1081px) {
+                    width: 50%;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    @media all and (max-width:1081px) {
+        .destination-main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    }
+}
+
+@keyframes rotatePlanet {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

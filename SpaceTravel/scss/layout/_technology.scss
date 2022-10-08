@@ -1,0 +1,265 @@
+.technology {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('/css/images/technologybg.jpg');
+    @media all and (max-width:630px) {
+        height: auto;
+    }
+    .container {
+        h3 {
+            font-size: 28px;
+            font-family: $navigation-font;
+            color: #ffff;
+            letter-spacing: 4.72px;
+            font-weight: 400;
+            padding-top: 212px;
+            padding-left: 161px;
+            padding-bottom: 80px;
+            margin: 0;
+
+            span {
+                font-size: 28px;
+                font-weight: bold;
+                font-family: $navigation-font;
+                margin-right: 24px;
+                opacity: 25%;
+                color: #fff;
+            }
+        }
+
+        .swiper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .swiper-pagination {
+                position: relative;
+                width: 33%;
+                margin-inline: 10%;
+            }
+
+            .swiper-pagination-bullet {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80px;
+                height: 80px;
+                background-color: #ffff;
+                margin-block: 16px;
+                font-size: 32px;
+                color: #0B0D17;
+                font-family: $headers-font;
+            }
+
+            .swiper-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+
+                .swiper-slide {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    width: 70%;
+
+                    .tech-img {
+                        position: relative;
+                        width: 50%;
+
+                        img {
+                            float: right;
+                            margin-right: 80px;
+                        }
+                    }
+
+                    .tech-content {
+                        width: 30%;
+
+                        h4 {
+                            font-family: $navigation-font;
+                            font-size: 16px;
+                            letter-spacing: 2.7px;
+                            font-weight: 400;
+                            color: #D0D6F9;
+                            margin-bottom: 11px;
+                            margin-top: 0;
+                            margin-left: 0;
+                            text-align: left;
+                        }
+
+                        h2 {
+                            font-size: 56px;
+                            font-family: $headers-font;
+                            color: #fff;
+                            font-weight: 400;
+                        }
+
+                        p {
+                            @include page-description;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:1220px) {
+    .technology {
+        .container {
+            h3 {
+                padding-top: 130px;
+                padding-bottom: 60px;
+            }
+
+            .swiper {
+                flex-direction: column-reverse;
+
+                .swiper-pagination {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    .swiper-pagination-bullet {
+                        width: 60px;
+                        height: 60px;
+                        font-size: 24px;
+                    }
+                }
+
+                .swiper-wrapper {
+                    margin-top: 0;
+
+                    .swiper-slide {
+                        flex-direction: column-reverse;
+
+                        .tech-content {
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            margin-top: 50px;
+
+                            h4 {
+                                font-size: 16px;
+                                text-align: center;
+                            }
+
+                            h2 {
+                                font-size: 40px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+
+                            width: 100%;
+                        }
+
+                        .tech-img {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            max-height: 310px;
+
+                            img {
+                                margin-right: 0;
+                                max-width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .largeTech1 {
+        display: none;
+    }
+
+}
+
+@media all and (min-width:1220px) {
+
+    .mobiletech1img {
+        display: none;
+    }
+}
+
+@media all and (max-width:1220px) {
+    .technology {
+        .container {
+            h3 {
+                padding-left: 0;
+                text-align: center;
+                font-size: 16px;
+            }
+
+            .swiper {
+                flex-direction: column-reverse;
+
+                .swiper-pagination {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    .swiper-pagination-bullet {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                    }
+                }
+
+                .swiper-wrapper {
+                    margin-top: 0;
+
+                    .swiper-slide {
+                        flex-direction: column-reverse;
+
+                        .tech-content {
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            margin-top: 50px;
+
+                            h4 {
+                                font-size: 14px;
+                                text-align: center;
+                            }
+
+                            h2 {
+                                font-size: 24px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                            }
+
+                            width: 100%;
+                        }
+
+                        .tech-img {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            max-height: 310px;
+
+                            img {
+                                margin-right: 0;
+                                max-width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .largeTech1 {
+        display: none;
+    }
+
+}
