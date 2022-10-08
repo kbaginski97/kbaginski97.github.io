@@ -5,10 +5,6 @@
     background-repeat: no-repeat;
     overflow: hidden;
 
-    @media all and (max-height:844px) {
-        height: auto;
-    }
-
     h5 {
         font-family: $navigation-font;
         font-size: 28px;

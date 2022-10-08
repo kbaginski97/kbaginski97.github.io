@@ -743,11 +743,6 @@ input[type=checkbox], input[type=radio] {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-@media all and (max-height: 844px) {
-  .crew {
-    height: auto;
-  }
-}
 .crew h5 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 28px;
@@ -924,11 +919,6 @@ input[type=checkbox], input[type=radio] {
   width: 100%;
   background-repeat: no-repeat;
   background-image: url("../css/images/technologybg.jpg");
-}
-@media all and (max-height: 844px) {
-  .technology {
-    height: auto;
-  }
 }
 .technology .container h3 {
   font-size: 28px;
