@@ -743,6 +743,11 @@ input[type=checkbox], input[type=radio] {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+@media all and (max-height: 667px) {
+  .crew {
+    height: auto;
+  }
+}
 .crew h5 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 28px;
