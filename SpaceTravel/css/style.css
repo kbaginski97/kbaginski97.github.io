@@ -1085,6 +1085,9 @@ input[type=checkbox], input[type=radio] {
     text-align: center;
     font-size: 16px;
   }
+  .technology .container h3 span {
+    font-size: 16px;
+  }
   .technology .container .swiper {
     flex-direction: column-reverse;
   }
