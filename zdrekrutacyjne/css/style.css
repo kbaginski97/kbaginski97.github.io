@@ -196,6 +196,8 @@ input:checked+.monthly-span:before {
     height: 304px;
     background-color: #121212;
     margin-top: 100px;
+    max-width: 1800px;
+    margin-inline: auto;
 }
 
 .footer-nav a {
