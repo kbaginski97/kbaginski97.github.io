@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #1D1D1B;
+    font-family: "Khula";
+    font-size: 14px;
+    font-weight: 600;
+    margin-inline: 28px
+}
+
+a:hover {
+    color: #EF7925;
+}
+
+.hamburger {
+    display: flex;
+    width: auto;
+    cursor: pointer;
+}
+
+.hamb-mobile {
+    display: none;
+    width: auto;
+    cursor: pointer;
+}
+
+#primary-span {
+    width: 24px;
+    height: 1.5px;
+    background-color: black;
+    margin-bottom: 5.75px;
+    transition: 0.3s;
+}
+
+#secondary-span {
+    width: 17.5px;
+    height: 1.5px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.hamburger-open #secondary-span {
+    width: 24px;
+    height: 1.5px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transform-origin: 7px;
+    transition: 0.3s;
+}
+
+.hamburger-open #primary-span {
+    transform: rotate(45deg);
+    transform-origin: 7px;
+    transition: 0.3s;
+}
+
+.hamburger-open .w-50 img {
+    display: none;
+}
+
+.hamburger-open .main-navigation a {
+    display: flex !important;
+    margin-inline: 10px;
+}
+
+.hamburger-open {
+    background-color: rgb(233, 227, 227);
+    max-width: 100vw;
+    margin: 0px;
+    transition: 0.5s;
+}
+
+.learn-more-btn:hover {
+    color: white !important;
+    background-color: #EF7925 !important;
+    border-radius: 20px !important;
+}
+
+.main-homepage-btn:hover {
+    color: white !important;
+    background-color: gray !important;
+    border-radius: 20px !important;
+    transition: 0.3s;
+}
+
+.sub-btn:hover {
+    color: white !important;
+    background-color: gray !important;
+    border-radius: 20px !important;
+    transition: 0.3s;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Khula';
+    margin-bottom: 32px;
+    position: relative;
+}
+
+li::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    border: 1px solid rgba(237, 237, 237, 1);
+    bottom: -16px;
+}
+
+i {
+    margin-right: 18.33px;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch {
+    display: inline-flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EDEDED;
+    border-radius: 30px;
+    height: 54px;
+    margin-bottom: 48px;
+}
+
+.switch span {
+    width: 50%;
+    margin-block: 2px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Khula';
+}
+
+.monthly-span::before {
+    position: absolute;
+    content: " ";
+    height: 100%;
+    background: #EF7925;
+    border-radius: 30px;
+    z-index: -10;
+    height: 48px;
+    width: 112px;
+    top: -12px;
+    left: -10px;
+    transition: 0.4s;
+}
+
+input:checked+.monthly-span:before {
+    -webkit-transform: translateX(82px);
+    -ms-transform: translateX(82px);
+    transform: translateX(82px);
+    transition: 0.4s;
+}
+
+.active {
+    color: #fff;
+}
+
+.monthly-span {
+    margin-left: 12px;
+}
+
+.yearly-span {
+    text-align: right;
+    margin-right: 12px;
+}
+
+.carousel-indicators {
+    bottom: -80px !important;
+}
+
+.carousel-indicators button.active {
+    background-color: #EF7925 !important;
+}
+
+.carousel-indicators button {
+    background-color: gray !important;
+    border-radius: 100% !important;
+    width: 8px !important;
+    height: 8px !important;
+    margin-inline: 10px !important;
+    box-shadow: -7px 60px 16px -20px rgb(112, 113, 114);
+}
+
+.main-footer {
+    width: 100%;
+    height: 304px;
+    background-color: #121212;
+    margin-top: 100px;
+}
+
+.footer-nav a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Khula';
+}
+
+.footer-nav a:hover {
+    color: #EF7925;
+}
+
+
+@media all and (min-width:1800px) {
+    .main-section {
+        max-width: 1800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+}
+
+
+@media all and (min-width:1200px) {
+.hamburger-open .hamburger {
+    padding-left: 400px;
+}
+}
+
+@media all and (max-width:1200px) {
+    h1 {
+        margin-top: 50px !important;
+    }
+}
+
+@media all and (max-width:992px) {
+
+    .main-navigation a,
+    i {
+        display: none !important;
+    }
+
+    .main-navigation {
+        justify-content: flex-end !important;
+        width: 50%;
+    }
+
+    #primary-span {
+        width: 24px;
+        height: 2px;
+        background-color: black;
+        margin-bottom: 5.75px;
+    }
+
+    #secondary-span {
+        width: 17.5px;
+        height: 2px;
+        background-color: black;
+    }
+
+    .gallery-container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:777px) {
+
+    .footer-nav a {
+        margin-inline: 10px;
+    }
+
+    .carousel a {
+        margin-inline: 10px;
+    }
+
+    .offer-item {
+        width: 334px;
+    }
+}
+
+@media all and (max-width:578px) {
+    h1 {
+        font-size: 60px !important;
+    }
+
+    .footer-nav-cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav-cont img {
+        width: 100px;
+        height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .copyrights-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-secondary {
+        width: 220px !important;
+        margin-top: 30px !important;
+    }
+
+    .offer-section h2 {
+        font-size: 37px !important;
+    }
+
+    .offer-section h3 {
+        font-size: 20px !important;
+    }
+
+    .main-section img {
+        padding: 5px !important;
+    }
+}
+
+@media all and (max-width:578px) {
+    .footer-nav a {
+        margin-inline: 5px;
+    }
+
+    .row {
+        padding: 0px !important;
+        margin-inline: 0px !important;
+    }
+
+    .offer-item {
+        width: 300px;
+        height: 600px;
+    }
+
+    .time-description {
+        font-size: 20px !important;
+    }
+
+    .starter,
+    .normal,
+    .premium {
+        font-size: 38px !important;
+    }
+}
+
+@media all and (max-width:368px) {
+    h1 {
+        font-size: 50px !important;
+    }
+}
