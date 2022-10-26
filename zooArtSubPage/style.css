@@ -1,0 +1,41 @@
+h1,
+h2,
+h3 {
+    font-family: 'Poppins';
+    color: #32b97e;
+}
+
+p {
+    font-family: 'Lato';
+}
+
+section {
+    padding-block: 30px;
+}
+
+img:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+
+#primarylogo {
+    animation: logoAnimation 2s infinite;
+}
+
+@media all and (max-width:1400px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes logoAnimation {
+
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+
+}
