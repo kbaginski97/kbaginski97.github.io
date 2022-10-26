@@ -39,6 +39,7 @@ input:focus-visible {
 
 textarea {
     border: 1px solid #32b97e;
+    border-radius: 10px;
 }
 
 textarea:focus-visible {
