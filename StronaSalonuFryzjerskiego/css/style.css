@@ -101,7 +101,7 @@ h3 {
 }
 @media all and (max-width: 666px) {
   .main-header .header-container {
-    padding-inline: 0px;
+    padding-inline: 30px;
   }
 }
 .main-header .mobile-menu {
@@ -150,7 +150,7 @@ h3 {
 }
 .about {
   background-color: #DFCCC2;
-  background-image: url("/images/vectorgreen1.png");
+  background-image: url("../images/vectorgreen1.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   background-position-x: 10%;
@@ -219,7 +219,7 @@ h3 {
   }
 }
 .about .bg-abstract {
-  background-image: url("/images/abstractabout.png");
+  background-image: url("../images/abstractabout.png");
   background-repeat: no-repeat;
   background-position: right;
   background-position-x: 85%;
@@ -246,7 +246,7 @@ h3 {
 
 .offer {
   background-color: #C5CEBD;
-  background-image: url("/images/vector-5.png");
+  background-image: url("../images/vector-5.png");
   background-repeat: no-repeat;
   background-position-y: 60%;
   background-position-x: 55%;
@@ -390,6 +390,16 @@ footer .container span {
     padding: 0px;
   }
 }
+@media all and (max-width: 424px) {
+  footer .container .row .col-4 {
+    padding-block: 15px;
+  }
+}
+@media all and (max-width: 424px) {
+  footer .container .row {
+    flex-direction: column;
+  }
+}
 
 .contact {
   background-color: #C2B8CC;
@@ -471,7 +481,7 @@ footer .container span {
   padding: 0%;
 }
 .contact .container-fluid .background-contact {
-  background-image: url("/images/abstract-3.png");
+  background-image: url("../images/abstract-3.png");
   background-repeat: no-repeat;
   background-size: 30%;
   background-position-y: 70%;

@@ -55,6 +55,12 @@ footer {
                     margin: 0px;
                     padding: 0px;
                 }
+                @media all and (max-width:424px) {
+                    padding-block:15px;
+                }
+            }
+            @media all and (max-width:424px) {
+                flex-direction: column;
             }
         }
     }
