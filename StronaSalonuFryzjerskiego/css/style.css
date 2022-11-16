@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding-block: 100px;
+  overflow: hidden;
+}
+@media all and (max-width: 666px) {
+  section {
+    padding-block: 50px;
+  }
+}
+@media all and (max-width: 548px) {
+  section {
+    padding-block: 10px;
+  }
+}
+
+.workflow {
+  padding: 0;
+}
+
+@media all and (max-width: 886px) {
+  h2 {
+    font-size: 36px !important;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: "Lexend Deca";
+}
+
+.main-header {
+  background-color: #DFCCC2;
+}
+.main-header .nav-img-holder img {
+  width: 200px;
+  height: 200px;
+}
+.main-header .main-nav {
+  font-family: "Lexend Deca";
+}
+.main-header .main-nav a {
+  margin: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Lexend Deca";
+  letter-spacing: 1.5px;
+}
+.main-header .hamburger-menu {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+.main-header .hamburger-menu .hamburger {
+  display: block;
+  background-color: white;
+  width: 34px;
+  height: 2px;
+  border-radius: 10px;
+  margin: 7px;
+  animation: hamburgerLine 0.1s ease-in-out;
+}
+.main-header .open .line1 {
+  transform: rotate(45deg);
+  transform-origin: 30%;
+  animation: hamburgerLine 0.1s ease-in-out;
+}
+.main-header .open .line2 {
+  display: none;
+  animation: hamburgerLine 0.1s ease-in-out;
+}
+.main-header .open .line3 {
+  transform: rotate(-45deg);
+  transform-origin: 30%;
+  animation: hamburgerLine2 0.1s ease-in-out;
+}
+.main-header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  padding-inline: 100px;
+}
+@media all and (max-width: 666px) {
+  .main-header .header-container {
+    padding-inline: 0px;
+  }
+}
+.main-header .mobile-menu {
+  display: none;
+}
+
+.open .mobile-menu {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.open .mobile-menu .mobile-nav {
+  display: flex;
+  flex-direction: column;
+}
+.open .mobile-menu .mobile-nav a {
+  margin: 15px;
+  text-transform: uppercase;
+  font-family: "Lexend Deca";
+  text-align: center;
+  font-size: 24px;
+}
+
+@media all and (min-width: 878px) {
+  .open .mobile-menu {
+    display: none;
+  }
+}
+@media all and (max-width: 878px) {
+  .main-header .main-nav {
+    display: none;
+  }
+  .main-header .hamburger-menu {
+    display: block;
+  }
+}
+@keyframes hamburgerLine {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hamburgerLine2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.about {
+  background-color: #DFCCC2;
+  background-image: url("/images/vectorgreen1.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-position-x: 10%;
+}
+@media all and (max-width: 992px) {
+  .about {
+    background-position-y: 60%;
+    background-position-x: 20%;
+  }
+}
+@media all and (max-width: 768px) {
+  .about {
+    background-position-y: 50%;
+    background-position-x: 20%;
+  }
+}
+@media all and (max-width: 424px) {
+  .about {
+    background-position-y: 40%;
+    background-position-x: 20%;
+    background-size: 40%;
+  }
+}
+.about p {
+  font-family: "Poppins";
+}
+.about .vector3 {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 30%;
+}
+@media all and (max-width: 978px) {
+  .about .vector3 {
+    display: none;
+  }
+}
+.about h1 {
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -2.25px;
+}
+@media all and (max-width: 535px) {
+  .about h1 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 424px) {
+  .about h1 {
+    font-size: 33px;
+    padding-inline: 0px !important;
+  }
+}
+.about h2 {
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -2.25px;
+}
+@media all and (max-width: 424px) {
+  .about h2 {
+    font-size: 28px !important;
+  }
+}
+.about .bg-abstract {
+  background-image: url("/images/abstractabout.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 85%;
+}
+@media all and (max-width: 992px) {
+  .about .bg-abstract {
+    padding-bottom: 100px;
+  }
+}
+@media all and (max-width: 424px) {
+  .about .bg-abstract {
+    background-position: right;
+    background-size: 50%;
+  }
+}
+@media all and (max-width: 898px) {
+  .about .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.offer {
+  background-color: #C5CEBD;
+  background-image: url("/images/vector-5.png");
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+  background-position-x: 55%;
+}
+@media all and (max-width: 666px) {
+  .offer {
+    background-image: none;
+  }
+}
+.offer h2 {
+  font-family: "Lexend Deca";
+  color: white;
+  letter-spacing: -2.25px;
+  line-height: 66px;
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+@media all and (max-width: 768px) {
+  .offer h2 {
+    padding-bottom: 10px;
+  }
+}
+.offer h3 {
+  color: white;
+  letter-spacing: -1.25px;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 40px;
+  padding-block: 100px;
+}
+@media all and (max-width: 978px) {
+  .offer h3 {
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 718px) {
+  .offer h3 {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 478px) {
+  .offer h3 {
+    padding-block: 50px;
+  }
+}
+.offer img {
+  height: 390px;
+  max-width: 190px;
+}
+@media all and (max-width: 617px) {
+  .offer img {
+    height: 330px;
+  }
+}
+@media all and (max-width: 478px) {
+  .offer img {
+    height: 280px;
+  }
+}
+.offer #offer2img {
+  height: 490px;
+  max-width: 190px;
+}
+@media all and (max-width: 617px) {
+  .offer #offer2img {
+    height: 360px;
+  }
+}
+@media all and (max-width: 478px) {
+  .offer #offer2img {
+    height: 280px;
+  }
+}
+@media all and (max-width: 778px) {
+  .offer .container-fluid .row .col-4 {
+    padding: 0 !important;
+  }
+}
+
+footer {
+  background-color: #DFCCC2;
+  min-height: 150px;
+}
+footer h4 {
+  font-size: 1.2rem;
+  font-family: "Lexend Deca";
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+@media all and (max-width: 718px) {
+  footer h4 {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 629px) {
+  footer h4 {
+    font-size: 0.8rem;
+  }
+}
+footer i {
+  margin-right: 5px;
+}
+footer .container span {
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+}
+@media all and (max-width: 718px) {
+  footer .container span {
+    font-size: 0.8rem;
+  }
+}
+@media all and (max-width: 629px) {
+  footer .container span {
+    font-size: 0.7rem;
+  }
+}
+@media all and (max-width: 886px) {
+  footer .container {
+    display: flex;
+    max-width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+}
+@media all and (max-width: 886px) {
+  footer .container .row {
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+  }
+  footer .container .row .col-4 {
+    width: 33% !important;
+  }
+}
+@media all and (max-width: 666px) {
+  footer .container .row .col-4 {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.contact {
+  background-color: #C2B8CC;
+}
+.contact .swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact .swiper .swiper-wrapper {
+  padding-top: 100px;
+}
+.contact .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .swiper .swiper-wrapper .swiper-slide img {
+  width: 480px;
+  height: 360px;
+  object-fit: contain;
+}
+.contact .container-fluid .row .col-xl-6 .col-4 h2 {
+  font-family: "Lexend Deca";
+  color: white;
+  letter-spacing: -2.25px;
+  line-height: 56px;
+  font-size: 50px;
+  transform: rotate(-90deg);
+}
+.contact .container-fluid .row .col-xl-6 .col-8 p {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+@media all and (max-width: 728px) {
+  .contact .container-fluid .row .col-xl-6 .col-8 p {
+    font-size: 14px;
+  }
+}
+.contact .container-fluid .row .col-xl-6 .col-8 h3 {
+  font-family: "Lexend Deca";
+  color: #fff;
+  font-size: 40px;
+  padding-block: 30px;
+}
+@media all and (max-width: 728px) {
+  .contact .container-fluid .row .col-xl-6 .col-8 h3 {
+    font-size: 32px;
+  }
+}
+.contact .container-fluid .row .col-xl-6 .col-8 h4 {
+  font-family: "Lexend Deca";
+  color: #fff;
+  font-size: 20px;
+}
+@media all and (max-width: 728px) {
+  .contact .container-fluid .row .col-xl-6 .col-8 h4 {
+    font-size: 18px;
+  }
+}
+.contact .container-fluid .row .col-xl-6 .col-8 h4 i {
+  margin-inline: 5px;
+}
+.contact .container-fluid .row .col-xl-6 .col-8 span {
+  color: #fff;
+  font-family: "Poppins";
+}
+@media all and (max-width: 1128px) {
+  .contact .container-fluid .row {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contact .container-fluid .row .frame-container {
+  padding: 0%;
+}
+.contact .container-fluid .background-contact {
+  background-image: url("/images/abstract-3.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-y: 70%;
+  background-position-x: 60%;
+}
+@media all and (max-width: 842px) {
+  .contact .container-fluid .location-container {
+    padding: 0px;
+  }
+  .contact .container-fluid .location-container .location-header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 32px !important;
+    margin: 0px;
+  }
+}
+@media all and (max-width: 742px) {
+  .contact .container-fluid .location-container .location-header h2 {
+    font-size: 28px !important;
+  }
+}
+@media all and (max-width: 636px) {
+  .contact .container-fluid .location-container .location-header h2 {
+    font-size: 22px !important;
+    line-height: 22px;
+  }
+}
+@media all and (max-width: 478px) {
+  .contact .container-fluid .location-container .location-header h2 {
+    line-height: 0px;
+  }
+}
+@media all and (max-width: 548px) {
+  .contact {
+    padding-block: 0px !important;
+  }
+}
+
+.workflow .container-fluid {
+  position: relative;
+}
+.workflow .container-fluid .workflow-description {
+  position: absolute;
+  content: " ";
+  bottom: 30%;
+  left: 30%;
+  width: auto;
+}
+.workflow .container-fluid .workflow-description .primary-span {
+  font-size: 60px;
+  color: #fff;
+  font-family: "Poppins";
+  letter-spacing: -2.25px;
+  line-height: 66px;
+}
+@media all and (max-width: 960px) {
+  .workflow .container-fluid .workflow-description .primary-span {
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 886px) {
+  .workflow .container-fluid .workflow-description .primary-span {
+    font-size: 45px;
+    text-align: right;
+  }
+}
+@media all and (max-width: 521px) {
+  .workflow .container-fluid .workflow-description .primary-span {
+    padding-inline: 0px;
+    padding-right: 0px;
+    font-size: 33px;
+    line-height: 40px;
+  }
+}
+@media all and (max-width: 390px) {
+  .workflow .container-fluid .workflow-description .primary-span {
+    font-size: 31px;
+  }
+}
+.workflow .container-fluid .workflow-description .secondary-span {
+  padding-inline: 100px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Poppins";
+  letter-spacing: -0.4px;
+  line-height: 24px;
+}
+@media all and (max-width: 1104px) {
+  .workflow .container-fluid .workflow-description .secondary-span {
+    padding-inline: 50px;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 886px) {
+  .workflow .container-fluid .workflow-description .secondary-span {
+    width: 100%;
+    padding-inline: 30px;
+  }
+}
+@media all and (max-width: 804px) {
+  .workflow .container-fluid .workflow-description .secondary-span {
+    padding-inline: 0px;
+    padding-right: 15px;
+  }
+}
+@media all and (max-width: 521px) {
+  .workflow .container-fluid .workflow-description .secondary-span {
+    padding-inline: 0px;
+    padding-right: 0px;
+    max-width: 100%;
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 370px) {
+  .workflow .container-fluid .workflow-description .secondary-span {
+    font-size: 9px;
+  }
+}
+@media all and (max-width: 804px) {
+  .workflow .container-fluid .workflow-description {
+    width: 100%;
+    left: 25%;
+  }
+}
+@media all and (max-width: 666px) {
+  .workflow .container-fluid .workflow-description {
+    width: 100%;
+    left: 15%;
+  }
+}
+@media all and (max-width: 582px) {
+  .workflow .container-fluid .workflow-description {
+    width: 100%;
+    left: 5%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,158 @@
+.contact {
+    background-color: #C2B8CC;
+
+    .swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .swiper-wrapper {
+            padding-top: 100px;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 480px;
+                    height: 360px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        .row {
+            .col-xl-6 {
+                .col-4 {
+                    h2 {
+                        font-family: $headers-font;
+                        color: #ffff;
+                        letter-spacing: -2.25px;
+                        line-height: 56px;
+                        font-size: 50px;
+                        transform: rotate(-90deg);
+                    }
+                }
+
+                .col-8 {
+                    p {
+                        color: #fff;
+                        font-family: $primary-font;
+                        font-size: 20px;
+
+                        @media all and(max-width:728px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    h3 {
+                        font-family: $headers-font;
+                        color: #fff;
+                        font-size: 40px;
+                        padding-block: 30px;
+
+                        @media all and(max-width:728px) {
+                            font-size: 32px;
+                        }
+                    }
+
+                    h4 {
+                        font-family: $headers-font;
+                        color: #fff;
+                        font-size: 20px;
+
+                        @media all and(max-width:728px) {
+                            font-size: 18px;
+                        }
+
+                        i {
+                            margin-inline: 5px;
+                        }
+                    }
+
+                    span {
+                        color: #fff;
+                        font-family: $primary-font;
+                    }
+                }
+            }
+
+            @media all and (max-width:1128px) {
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .frame-container {
+                padding: 0%;
+            }
+        }
+
+        .background-contact {
+            background-image: url('/images/abstract-3.png');
+            background-repeat: no-repeat;
+            background-size: 30%;
+            background-position-y: 70%;
+            background-position-x: 60%;
+
+        }
+
+        @media all and(max-width:842px) {
+            .location-container {
+                padding: 0px;
+
+                .location-header {
+                    h2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        font-size: 32px !important;
+                        margin: 0px;
+
+                    }
+                }
+            }
+        }
+
+        @media all and (max-width:742px) {
+            .location-container {
+                .location-header {
+                    h2 {
+                        font-size: 28px !important;
+                    }
+                }
+            }
+        }
+
+        @media all and (max-width:636px) {
+            .location-container {
+                .location-header {
+                    h2 {
+                        font-size: 22px !important;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        @media all and (max-width:478px) {
+            .location-container {
+                .location-header {
+                    h2 {
+                        line-height: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and(max-width:548px) {
+        padding-block: 0px !important;
+    }
+}

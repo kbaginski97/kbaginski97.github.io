@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+section {
+    padding-block: 100px;
+    overflow: hidden;
+    @media all and(max-width:666px) {
+        padding-block: 50px;
+    }
+    @media all and(max-width:548px) {
+        padding-block: 10px;
+    }
+}
+
+.workflow {
+    padding: 0;
+}
+
+@media all and (max-width:886px) {
+    h2 {
+        font-size: 36px !important;
+    }
+}
