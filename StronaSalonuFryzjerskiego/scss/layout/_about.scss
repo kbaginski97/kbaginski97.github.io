@@ -1,6 +1,6 @@
 .about {
     background-color: #DFCCC2;
-    background-image: url('/images/vectorgreen1.png');
+    background-image: url('.../images/vectorgreen1.png');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-position-x: 10%;
@@ -62,7 +62,7 @@
     }
 
     .bg-abstract {
-        background-image: url('/images/abstractabout.png');
+        background-image: url('.../images/abstractabout.png');
         background-repeat: no-repeat;
         background-position: right;
         background-position-x: 85%;
