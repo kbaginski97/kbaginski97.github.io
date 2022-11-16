@@ -6,14 +6,14 @@ MobileMenuItem = document.querySelectorAll('.mobile-item');
 
 hamburgerDiv.addEventListener('click', () => {
   hamburgerDiv.classList.toggle('open');
-  header.classList.add('open');
+  header.classList.toggle('open');
   body.classList.toggle('overflow-body');
 })
 
 MobileMenuItem.forEach(element => {
   element.addEventListener('click', () => {
-    hamburgerDiv.classList.remove('open');
-    header.classList.remove('open');
+    hamburgerDiv.classList.toggle('open');
+    header.classList.toggle('open');
     body.classList.toggle('overflow-body');
   })
 });
