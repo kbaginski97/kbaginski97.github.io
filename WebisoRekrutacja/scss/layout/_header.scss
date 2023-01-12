@@ -1,0 +1,102 @@
+header {
+    background-color: #291D65;
+    padding-left: 172px;
+    padding-right: 182px;
+    padding-block: 27px;
+
+    .number-container {
+        a {
+            margin-left: 15.5px;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 19px;
+            color: #fff;
+            font-family: $primary-font;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .nav-holder {
+        padding-left: 600px;
+
+        nav {
+            a {
+                text-decoration: none;
+                font-family: $primary-font;
+                font-size: 14px;
+                line-height: 19px;
+                color: #6D649D;
+                margin-inline: 10px;
+
+                &:hover {
+                    color: #61DDFE;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:1521px) {
+    header {
+        padding-inline: 40px;
+    }
+
+}
+
+@media all and (max-width:1246px) {
+    header {
+        padding-inline: 10px;
+
+        .nav-holder {
+            padding-left: 400px;
+        }
+    }
+}
+
+@media all and (max-width:986px) {
+    header {
+        padding-inline: 10px;
+
+        .nav-holder {
+            padding-left: 250px;
+        }
+    }
+}
+
+@media all and (max-width:840px) {
+    header {
+        padding-inline: 2px;
+
+        .nav-holder {
+            padding-left: 0px;
+        }
+    }
+}
+
+@media all and (max-width:586px) {
+    header {
+        .nav-holder {
+            nav {
+                a {
+                    font-size: 10px;
+                    margin-inline: 5px;
+                }
+            }
+        }
+
+        .number-container {
+            a {
+                font-size: 10px;
+            }
+        }
+
+        .email-container {
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+}
