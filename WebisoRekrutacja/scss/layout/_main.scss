@@ -130,8 +130,7 @@
 
     .container {
         h2 {
-            font-weight: light;
-            font-family: $primary-font;
+            font-family: $primary-font-light;
             font-size: 18px;
             text-align: left;
             opacity: 0.4;
@@ -144,11 +143,10 @@
             padding-bottom: 93px;
             background-image: url("../images/line.svg");
             background-repeat: no-repeat;
-            background-position: left 530px bottom 10px;
+            background-position: left 450px bottom 10px;
 
             h1 {
-                font-weight: light;
-                font-family: $primary-font;
+                font-family: $primary-font-light;
                 font-size: 50px;
                 text-align: center;
                 color: #fff;
@@ -222,7 +220,7 @@
 
         .container {
             .play-btn-holder {
-                background-position: left 400px bottom 10px;
+                background-position: left 300px bottom 10px;
 
                 h1 {
                     font-size: 40px;
@@ -243,6 +241,7 @@
                 margin-left: 10px;
             }
         }
+
         #mainimg {
             top: 70%;
         }
@@ -266,7 +265,8 @@
             max-width: 100% !important;
 
             .play-btn-holder {
-                background-position: left 220px bottom 10px;
+                background-position: left 280px bottom 65px;
+                background-size: 20%;
 
                 h1 {
                     font-size: 30px;
@@ -320,7 +320,7 @@
             }
 
             .play-btn-holder {
-                background-position: left 85% bottom 150px;
+                background-position: left 75% bottom 200px;
                 flex-direction: column;
 
                 h1 {
@@ -348,7 +348,8 @@
             }
 
             .play-btn-holder {
-                background-position: left 85% bottom 150px;
+                background-position: left 75% bottom 210px;
+                background-size: 25%;
                 flex-direction: column;
 
                 h1 {
@@ -387,6 +388,14 @@
     .main {
         #mainimg {
             top: 80%;
+        }
+
+        .container {
+            .play-btn-holder {
+                background-position: left 80% bottom 220px;
+                background-size: 25%;
+                flex-direction: column;
+            }
         }
     }
 }

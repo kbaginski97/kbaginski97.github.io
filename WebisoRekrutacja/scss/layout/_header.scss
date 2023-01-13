@@ -100,3 +100,28 @@ header {
         }
     }
 }
+
+@media all and (max-width:424px) {
+    header {
+        .nav-holder {
+            nav {
+                a {
+                    font-size: 9px;
+                    margin-inline: 5px;
+                }
+            }
+        }
+
+        .number-container {
+            a {
+                font-size: 9px;
+            }
+        }
+
+        .email-container {
+            a {
+                font-size: 9px;
+            }
+        }
+    }
+}

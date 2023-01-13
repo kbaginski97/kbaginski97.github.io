@@ -177,6 +177,15 @@
             }
 
             .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .ratio-author {
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
                 .swiper-pagination {
                     right: -30%;
                 }

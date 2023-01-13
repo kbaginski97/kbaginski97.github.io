@@ -80,6 +80,18 @@ header .nav-holder nav a:hover {
     font-size: 10px;
   }
 }
+@media all and (max-width: 424px) {
+  header .nav-holder nav a {
+    font-size: 9px;
+    margin-inline: 5px;
+  }
+  header .number-container a {
+    font-size: 9px;
+  }
+  header .email-container a {
+    font-size: 9px;
+  }
+}
 .main {
   background-color: #312477;
   min-height: 893px;
@@ -190,8 +202,7 @@ header .nav-holder nav a:hover {
   transition: 0.3s;
 }
 .main .container h2 {
-  font-weight: light;
-  font-family: "Be Vietnam Pro";
+  font-family: "Be Vietnam Pro, Light";
   font-size: 18px;
   text-align: left;
   opacity: 0.4;
@@ -203,11 +214,10 @@ header .nav-holder nav a:hover {
   padding-bottom: 93px;
   background-image: url("../images/line.svg");
   background-repeat: no-repeat;
-  background-position: left 530px bottom 10px;
+  background-position: left 450px bottom 10px;
 }
 .main .container .play-btn-holder h1 {
-  font-weight: light;
-  font-family: "Be Vietnam Pro";
+  font-family: "Be Vietnam Pro, Light";
   font-size: 50px;
   text-align: center;
   color: #fff;
@@ -258,7 +268,7 @@ header .nav-holder nav a:hover {
     margin-left: 10px;
   }
   .main .container .play-btn-holder {
-    background-position: left 400px bottom 10px;
+    background-position: left 300px bottom 10px;
   }
   .main .container .play-btn-holder h1 {
     font-size: 40px;
@@ -284,7 +294,8 @@ header .nav-holder nav a:hover {
     max-width: 100% !important;
   }
   .main .container .play-btn-holder {
-    background-position: left 220px bottom 10px;
+    background-position: left 280px bottom 65px;
+    background-size: 20%;
   }
   .main .container .play-btn-holder h1 {
     font-size: 30px;
@@ -321,7 +332,7 @@ header .nav-holder nav a:hover {
     text-align: center;
   }
   .main .container .play-btn-holder {
-    background-position: left 85% bottom 150px;
+    background-position: left 75% bottom 200px;
     flex-direction: column;
   }
   .main .container .play-btn-holder h1 {
@@ -342,7 +353,8 @@ header .nav-holder nav a:hover {
     font-size: 16px;
   }
   .main .container .play-btn-holder {
-    background-position: left 85% bottom 150px;
+    background-position: left 75% bottom 210px;
+    background-size: 25%;
     flex-direction: column;
   }
   .main .container .play-btn-holder h1 {
@@ -371,6 +383,11 @@ header .nav-holder nav a:hover {
 @media all and (max-width: 520px) {
   .main #mainimg {
     top: 80%;
+  }
+  .main .container .play-btn-holder {
+    background-position: left 80% bottom 220px;
+    background-size: 25%;
+    flex-direction: column;
   }
 }
 .offer {
@@ -529,9 +546,9 @@ header .nav-holder nav a:hover {
 }
 @media all and (max-width: 668px) {
   .offer .container-fluid h2 {
-    font-size: 24px;
+    font-size: 22px;
     padding-top: 120px;
-    line-height: 47px;
+    line-height: 35px;
   }
   .offer .container-fluid .swiper .swiper-wrapper .swiper-slide .row .col-4 {
     margin-inline: 2px;
@@ -693,6 +710,9 @@ header .nav-holder nav a:hover {
     background-size: 15%;
     left: 5%;
     top: 35%;
+  }
+  .opinions .container .swiper .swiper-wrapper .swiper-slide .ratio-author img {
+    margin-right: 10px;
   }
   .opinions .container .swiper .swiper-pagination {
     right: -30%;
@@ -1119,7 +1139,7 @@ footer .copyrights .bolder-text {
     width: 130px;
     height: 45px;
     font-size: 12px;
-    margin-top: 35px;
+    margin-top: 65px;
   }
   footer .container .row .owners-container .footer-logo {
     margin-bottom: 30px;
