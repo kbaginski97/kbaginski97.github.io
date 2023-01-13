@@ -95,6 +95,7 @@ header .nav-holder nav a:hover {
   }
   header .number-container a {
     font-size: 9px;
+    margin-left: 5px;
   }
   header .email-container a {
     font-size: 9px;
