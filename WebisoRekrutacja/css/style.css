@@ -84,7 +84,7 @@ header .nav-holder nav a:hover {
   background-color: #312477;
   min-height: 893px;
   position: relative;
-  background-image: url("../../images/pol 0.png");
+  background-image: url("../images/pol 0.png");
   background-repeat: no-repeat;
   background-position: bottom 0px left 186px;
 }
@@ -201,7 +201,7 @@ header .nav-holder nav a:hover {
 }
 .main .container .play-btn-holder {
   padding-bottom: 93px;
-  background-image: url("../../images/line.svg");
+  background-image: url("../images/line.svg");
   background-repeat: no-repeat;
   background-position: left 530px bottom 10px;
 }
@@ -375,7 +375,7 @@ header .nav-holder nav a:hover {
 }
 .offer {
   min-height: 900px;
-  background-image: url("../../images/pol 1.png");
+  background-image: url("../images/pol 1.png");
   background-repeat: no-repeat;
   background-position: top 0 left 0;
 }
@@ -389,7 +389,7 @@ header .nav-holder nav a:hover {
   padding-bottom: 117px;
   text-align: center;
   color: #312477;
-  background-image: url("../../images/line2.png");
+  background-image: url("../images/line2.png");
   background-repeat: no-repeat;
   background-position: bottom 0px right 46%;
 }
@@ -441,7 +441,7 @@ header .nav-holder nav a:hover {
 .offer .container-fluid .swiper .swiper-wrapper .swiper-slide .arrow-down::after {
   position: absolute;
   content: " ";
-  background-image: url("../../images/blogarrow2.svg");
+  background-image: url("../images/blogarrow2.svg");
   height: 100px;
   width: 150px;
   background-repeat: no-repeat;
@@ -451,7 +451,7 @@ header .nav-holder nav a:hover {
 .offer .container-fluid .swiper .swiper-wrapper .swiper-slide .upper-arrow::after {
   position: absolute;
   content: " ";
-  background-image: url("../../images/blogarrow1.svg");
+  background-image: url("../images/blogarrow1.svg");
   height: 100px;
   width: 150px;
   background-repeat: no-repeat;
@@ -562,7 +562,7 @@ header .nav-holder nav a:hover {
   position: relative;
 }
 .opinions .container {
-  background-image: url("../../images/Path253.png");
+  background-image: url("../images/Path253.png");
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 100px;
@@ -572,7 +572,7 @@ header .nav-holder nav a:hover {
   content: " ";
   top: 38%;
   left: 50px;
-  background-image: url("../../images/Path251.png");
+  background-image: url("../images/Path251.png");
   background-repeat: no-repeat;
   width: 150px;
   height: 100px;
@@ -783,7 +783,7 @@ header .nav-holder nav a:hover {
   left: 0;
   right: 0;
   bottom: -80px;
-  background-image: url("../../images/arrowform.svg");
+  background-image: url("../images/arrowform.svg");
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 80%;
@@ -797,7 +797,7 @@ header .nav-holder nav a:hover {
   color: #312477;
   padding-top: 90px;
   padding-bottom: 72px;
-  background-image: url("../../images/formline.svg");
+  background-image: url("../images/formline.svg");
   background-repeat: no-repeat;
   background-position-y: 90px;
   background-position-x: 400px;
@@ -956,7 +956,7 @@ header .nav-holder nav a:hover {
 }
 footer {
   background-color: #312477;
-  background-image: url("../../images/backgroundfooter.png");
+  background-image: url("../images/backgroundfooter.png");
   background-repeat: no-repeat;
   background-position: bottom 86px left 0;
 }
