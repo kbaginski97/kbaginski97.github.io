@@ -23,23 +23,23 @@
 <body>
     <header class="d-flex justify-content-between align-items-center">
         <div class="email-container">
-            <img src="images/Path 41.svg" alt="envelop.svg">
+            <i class="fa-solid fa-envelope"></i>
             <a href="mailto: office@fresh.com">office@fresh.com</a>
         </div>
         <div class="nav-holder">
             <nav>
-                <a href="">About Us</a>
-                <a href="">Information</a>
-                <a href="">Contact</a>
+                <a href="#mainsection">About Us</a>
+                <a href="#offersection">Information</a>
+                <a href="#footer">Contact</a>
             </nav>
         </div>
         <div class="number-container d-flex">
-            <img src="images/Path 40.svg" alt="chaticon.svg">
+            <i class="fa-regular fa-comment"></i>
             <a href="tel:+48 789 678 567">+48 789 678 567</a>
         </div>
     </header>
     <main>
-        <section class="main">
+        <section class="main" id="mainsection">
             <div class="main-page-header d-flex justify-content-between align-items-center">
                 <div class="mobile-menu">
                     <span class="hamburger-line line1">
@@ -49,12 +49,12 @@
                     <span class="hamburger-line line3">
                     </span>
                     <nav class="mobile-menu-nav">
-                        <a href="">Home</a>
-                        <a href="">About Us</a>
+                        <a href="#mainsection">Home</a>
+                        <a href="#mainsection">About Us</a>
                         <a href="">Gallery</a>
-                        <a href="">Info</a>
+                        <a href="#offersection">Info</a>
                         <a href="">FAQ</a>
-                        <a href="">Review</a>
+                        <a href="#review">Review</a>
                     </nav>
                 </div>
                 <div class="logo-holder d-flex align-items-center">
@@ -63,12 +63,20 @@
                 </div>
                 <div class="main-page-navigation d-flex justify-content-between align-items-center">
                     <nav>
-                        <a href="">Home</a>
-                        <a href="">About Us</a>
+                        <a href="#mainsection">Home</a>
+                        <a href="#mainsection">About Us</a>
                         <a href="">Gallery</a>
-                        <a href="">Info</a>
+                        <div class="dropdown">
+                            <a href="#offersection">Info</a>
+                            <img src="images/Path 2.svg" alt="">
+                            <div class="dropdown-links">
+                                <a href="#offersection">link1</a>
+                                <a href="#offersection">link2</a>
+                                <a href="#offersection">link3</a>
+                            </div>
+                        </div>
                         <a href="">FAQ</a>
-                        <a href="">Review</a>
+                        <a href="#review">Review</a>
                     </nav>
                     <button> Contact Us</button>
                 </div>
@@ -86,7 +94,7 @@
             <img src="images/smiling-pretty-brunette-woman-dress-straw-hat.png" alt="woman.png" id="mainimg">
             <img src="images/maincircle.svg" alt="" id="orangecircle">
         </section>
-        <section class="offer">
+        <section class="offer" id="offersection">
             <div class="container-fluid p-0">
                 <h2>Lorem Ipsum is simply dummy text</br>
                     printing and typesetting industry.
@@ -204,12 +212,13 @@
                 </div>
             </div>
         </section>
-        <section class="opinions">
+        <section class="opinions" id="opinionssection">
             <div class="container">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="ratio-value d-flex justify-content-center align-items-center flex-column">
+                            <div class="ratio-value d-flex justify-content-center align-items-center flex-column"
+                                id="review">
                                 <span> Średnia ocena 5.0 </span>
                                 <div class="ratio-icons">
                                     <img src="images/Path 252.svg" alt="">
@@ -278,7 +287,7 @@
             <img src="images/bluebloop.png" alt="" id="bluebloop">
             <img src="images/orangebloop.png" alt="" id="orangebloop">
         </section>
-        <section class="blog-section">
+        <section class="blog-section" id="blogsection">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-5">
@@ -340,7 +349,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-4 owners-container">

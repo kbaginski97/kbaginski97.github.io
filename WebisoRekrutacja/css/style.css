@@ -5,6 +5,7 @@
 html, body {
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -23,6 +24,13 @@ header .number-container a {
 }
 header .number-container a:hover {
   text-decoration: underline;
+}
+header .number-container i {
+  color: #61DDFE;
+}
+header .email-container i {
+  margin-right: 5px;
+  color: #61DDFE;
 }
 header .nav-holder {
   padding-left: 600px;
@@ -113,6 +121,9 @@ header .nav-holder nav a:hover {
   color: #fff;
   margin-left: 12.56px;
 }
+.main .main-page-header .main-page-navigation nav {
+  position: relative;
+}
 .main .main-page-header .main-page-navigation nav a {
   font-family: "Be Vietnam Pro";
   font-size: 17px;
@@ -123,6 +134,28 @@ header .nav-holder nav a:hover {
 }
 .main .main-page-header .main-page-navigation nav a:hover {
   color: #61DDFE;
+}
+.main .main-page-header .main-page-navigation nav .dropdown {
+  display: inline-flex;
+  cursor: pointer;
+}
+.main .main-page-header .main-page-navigation nav .dropdown:hover .dropdown-links {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.main .main-page-header .main-page-navigation nav .dropdown:hover .dropdown-links a {
+  font-size: 12px;
+  font-family: "Be Vietnam Pro";
+  font-size: 17px;
+}
+.main .main-page-header .main-page-navigation nav .dropdown:hover img {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.main .main-page-header .main-page-navigation nav .dropdown .dropdown-links {
+  display: none;
 }
 .main .main-page-header .main-page-navigation button {
   width: 228px;

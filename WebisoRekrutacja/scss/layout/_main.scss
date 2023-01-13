@@ -24,6 +24,8 @@
 
         .main-page-navigation {
             nav {
+                position: relative;
+
                 a {
                     font-family: $primary-font;
                     font-size: 17px;
@@ -34,6 +36,35 @@
 
                     &:hover {
                         color: #61DDFE;
+                    }
+                }
+
+                .dropdown {
+                    display: inline-flex;
+                    cursor: pointer;
+
+                    &:hover {
+                        .dropdown-links {
+                            display: block;
+                            position: absolute;
+                            top: 20px;
+                            right: 0;
+
+                            a {
+                                font-size: 12px;
+                                font-family: $primary-font;
+                                font-size: 17px;
+                            }
+                        }
+
+                        img {
+                            transform: rotate(180deg);
+                            transition: 0.3s;
+                        }
+                    }
+
+                    .dropdown-links {
+                        display: none;
                     }
                 }
             }
